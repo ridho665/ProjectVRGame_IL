@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df8447b48a1ba464399eb50e25363ac9, type: 3}
-  m_Name: Meja
+  m_Name: Table
   m_EditorClassIdentifier: 
-  itemName: Meja
-  itemPrefab: {fileID: 2299578420850200342, guid: b235c805f008f6f4da469f7364846b10,
+  itemName: Table
+  itemPrefab: {fileID: 6264875452807978716, guid: 78eb665bd481bf448b247d6a1c3a7446,
     type: 3}
   price: 5
   category: Furniture

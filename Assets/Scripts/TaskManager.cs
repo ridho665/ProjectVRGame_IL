@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,7 +19,6 @@ public class TaskManager : MonoBehaviour
 
     private void Start()
     {
-
         GenerateInitialTask();
         GenerateNewTask();
         acceptButton.onClick.AddListener(AcceptTask);
@@ -35,48 +33,26 @@ public class TaskManager : MonoBehaviour
     }
 
     private void GenerateNewTask()
-{
-    currentTask = new Task(); // Membuat task baru
-    currentTask.Initialize();  // Menginisialisasi task dengan nilai acak
-    Debug.Log("New Task: " + currentTask.room + " with style: " + currentTask.style + " and budget: " + currentTask.budget);
-
-    // Update UI setelah membuat task
-    FindObjectOfType<TaskUIManager>().UpdateTaskUI();
-}
-
-
-    // Method untuk menampilkan task di komputer
-    public void ShowTaskOnComputer()
     {
-        // if (taskRejectCount >= taskRejectLimit)
-        // {
-        //     taskDescriptionText.text = "You have reached the task reject limit.";
-        //     acceptButton.interactable = false;
-        //     rejectButton.interactable = false;
-        //     return;
-        // }
+        currentTask = new Task(); // Membuat task baru
+        currentTask.Initialize();  // Menginisialisasi task dengan nilai acak
+        Debug.Log("New Task: " + currentTask.room + " with style: " + currentTask.style + " and budget: " + currentTask.budget);
 
-        // Membuat task baru dengan budget, style, dan ruangan acak
-        currentTask = new Task();
-        taskDescriptionText.text = $"New Task: Design a {currentTask.room} with {currentTask.style} style. Budget: {currentTask.budget}";
-
-        // Mengaktifkan tombol
-        acceptButton.interactable = true;
-        rejectButton.interactable = true;
+        // Update UI setelah membuat task
+        FindObjectOfType<TaskUIManager>().UpdateTaskUI();
     }
 
     // Accept task
     public void AcceptTask()
     {
-        // taskDescriptionText.text = "Task accepted. Entering building mode...";
-        // acceptButton.interactable = false;
-        // rejectButton.interactable = false;
-
         // Pindahkan player ke building mode
         EnterBuildingMode();
 
         // Setel budget ke ShopManager
         shopManager.SetPlayerBudget(currentTask.budget);
+
+        // Setel waktu task ke ShopManager
+        shopManager.SetTaskTime(currentTask.time);
     }
 
     // Reject task
@@ -92,6 +68,6 @@ public class TaskManager : MonoBehaviour
     // Method untuk memulai building mode
     private void EnterBuildingMode()
     {
-        FindObjectOfType<ShopManager>().OpenShop();
+        shopManager.OpenShop();
     }
 }

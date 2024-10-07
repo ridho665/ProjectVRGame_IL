@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ShopManager : MonoBehaviour
@@ -7,18 +8,37 @@ public class ShopManager : MonoBehaviour
     [Header("Shop Items")]
     public List<ItemData> availableItems;
     public GameObject[] spawnPoints; // Array untuk menyimpan GameObject yang digunakan sebagai spawn points
-    private List<int> usedSpawnIndices = new List<int>(); // List untuk melacak spawn points yang sudah digunakan
     private int currentSpawnIndex = 0; // Index posisi spawn saat ini
 
     [Header("UI Elements")]
     public TextMeshProUGUI budgetText; // Referensi ke TextMeshPro untuk menampilkan budget di UI
+    public TextMeshProUGUI timerText;  // Referensi ke TextMeshPro untuk menampilkan timer di UI
 
     private ItemData selectedItem;
     private float playerBudget;
 
+    [Header("Timer Settings")]
+    private float taskDuration; // Waktu tugas dalam detik yang diterima dari TaskManager
+    private float currentTime;
+
     private void Start()
     {
         UpdateBudgetUI(); // Inisialisasi tampilan budget di UI
+    }
+
+    private void Update()
+    {
+        if (currentTime > 0)
+        {
+            currentTime -= Time.deltaTime;
+            UpdateTimerUI(); // Update tampilan timer di UI setiap frame
+        }
+        else if (currentTime < 0)
+        {
+            currentTime = 0;
+            Debug.Log("Task time has run out!");
+            // Lakukan aksi jika waktu habis, misalnya berikan penalti atau tampilkan notifikasi
+        }
     }
 
     // Membuka shop dan menampilkan item-item yang tersedia
@@ -39,6 +59,14 @@ public class ShopManager : MonoBehaviour
         playerBudget = budget;
         Debug.Log($"Player Budget set to: {playerBudget}");
         UpdateBudgetUI(); // Update UI saat budget diatur
+    }
+
+    // Set waktu tugas yang diterima dari TaskManager
+    public void SetTaskTime(float time)
+    {
+        taskDuration = time;
+        currentTime = taskDuration;
+        UpdateTimerUI(); // Update UI saat waktu diatur
     }
 
     // Memilih item untuk dibeli
@@ -103,7 +131,24 @@ public class ShopManager : MonoBehaviour
     {
         if (budgetText != null)
         {
-            budgetText.text = $"Budget: {playerBudget:N0}"; // Tampilkan budget sebagai angka tanpa simbol mata uang
+            budgetText.text = $"Budget: $ {playerBudget:N0}"; // Tampilkan budget sebagai angka tanpa simbol mata uang
         }
+    }
+
+    // Update UI untuk menampilkan timer
+    private void UpdateTimerUI()
+    {
+        if (timerText != null)
+        {
+            timerText.text = FormatTime(currentTime); // Format waktu dalam format MM:SS
+        }
+    }
+
+    // Method untuk memformat waktu dari detik menjadi MM:SS
+    private string FormatTime(float timeInSeconds)
+    {
+        int minutes = Mathf.FloorToInt(timeInSeconds / 60);
+        int seconds = Mathf.FloorToInt(timeInSeconds % 60);
+        return string.Format("{0:00}:{1:00}", minutes, seconds); // Format menjadi MM:SS
     }
 }
