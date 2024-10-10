@@ -11,15 +11,15 @@ public class Task
 
     public float time;
     // List gaya bangunan yang akan diacak
-    private string[] availableStyles = { "Modern", "Klasik", "Elegant" };
+    private string[] availableStyles = { "Modern", "Classic" };
 
     // List jenis ruangan yang akan diacak
-    private string[] availableRooms = { "Kamar Tidur", "Ruang Tamu", "Dapur", "Kamar Mandi", "Ruang Makan" };
+    private string[] availableRooms = { "Kitchen Room" };
 
     // Daftar budget yang tersedia
     private float[] availableBudgets = { 10, 15, 20, 25, 30 };
 
-    private float[] availableTimes = { 60, 90, 120, 150, 180};
+    private float[] availableTimes = { 120 };
 
     // Constructor untuk membuat task baru dengan budget, style, dan ruangan acak
     public void Initialize()

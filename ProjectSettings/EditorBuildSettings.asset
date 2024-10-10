@@ -8,6 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gameplay.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: f7a5153e315ec634bb96fd7b21d493c2
+  - enabled: 1
+    path: Assets/Scenes/Kitchen Room.unity
+    guid: a1c728b314e6295419fb819dd95d5601
+  - enabled: 1
+    path: Assets/Scenes/Family Room.unity
+    guid: 55bbd708e7e79e841a94d7c807ef443f
+  - enabled: 1
+    path: Assets/Scenes/Work Room.unity
+    guid: 34da1315feef04e4f98c4346ead2dfa5
+  - enabled: 1
+    path: Assets/Scenes/Dining Room.unity
+    guid: e34c1258e1414bd438d6c46ab344a671
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e76218e8a402d0043ac5802f87f3a0c6,
       type: 2}

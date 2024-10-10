@@ -14,7 +14,15 @@ public class TaskUIManager : MonoBehaviour
 
     private void Start()
     {
-        taskManager = FindObjectOfType<TaskManager>();
+        // Ambil referensi ke TaskManager dari GameObject yang sama
+        taskManager = GetComponent<TaskManager>();
+
+        // Mengambil referensi ke UI elements di scene, jika diperlukan
+        budgetText = GameObject.Find("BudgetText")?.GetComponent<TextMeshProUGUI>();
+        styleText = GameObject.Find("StyleText")?.GetComponent<TextMeshProUGUI>();
+        roomText = GameObject.Find("RoomText")?.GetComponent<TextMeshProUGUI>();
+        timeText = GameObject.Find("TimeText")?.GetComponent<TextMeshProUGUI>();
+
         UpdateTaskUI();
     }
 

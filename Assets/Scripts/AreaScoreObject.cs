@@ -13,7 +13,7 @@ public class AreaScoreObject : MonoBehaviour
         switch (other.tag)
         {
             case "ChairClassic":
-                scoreManager.AddScore(20); // Menambah skor 1 untuk chairClassic
+                scoreManager.AddScore(1); // Menambah skor 1 untuk chairClassic
                 Debug.Log("chairClassic touched the score area. Score added: 1");
                 break;
 
@@ -23,7 +23,7 @@ public class AreaScoreObject : MonoBehaviour
                 break;
 
             case "TableClassic":
-                scoreManager.AddScore(1); // Menambah skor 1 untuk TableClassic
+                scoreManager.AddScore(20); // Menambah skor 1 untuk TableClassic
                 Debug.Log("TableClassic touched the score area. Score added: 1");
                 break;
 
@@ -54,7 +54,7 @@ public class AreaScoreObject : MonoBehaviour
                 break;
 
             case "TableClassic":
-                scoreManager.AddScore(-1); // Mengurangi skor 1 untuk TableClassic
+                scoreManager.AddScore(-20); // Mengurangi skor 1 untuk TableClassic
                 Debug.Log("TableClassic left the score area. Score deducted: 1");
                 break;
 

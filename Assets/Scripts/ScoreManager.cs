@@ -1,33 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    [Header("UI Elements")]
-    public TextMeshProUGUI scoreText; // UI untuk menampilkan skor
-    public TextMeshProUGUI feedbackText; // UI untuk menampilkan feedback
-    public TextMeshProUGUI moneyText; // UI untuk menampilkan uang
-
-    [Header("Score Data")]
     private int score = 0; // Skor pemain
     private int money = 0; // Uang yang diperoleh pemain
 
-    // Feedback Thresholds
-    private int poorScoreThreshold = 20; // Batas skor untuk feedback kurang bagus
-    private int goodScoreThreshold = 50; // Batas skor untuk feedback bagus
-    private int greatScoreThreshold = 100; // Batas skor untuk feedback sangat bagus
+    // Thresholds
+    private int poorScoreThreshold = 20;
+    private int goodScoreThreshold = 50;
+    private int greatScoreThreshold = 100;
 
-    // Reward Value
-    public int rewardPoor = 5; // Reward untuk feedback "Kurang Bagus"
-    public int rewardGood = 10; // Reward untuk feedback "Bagus"
-    public int rewardGreat = 20; // Reward untuk feedback "Sangat Bagus"
+    // Reward Values
+    public int rewardPoor = 5;
+    public int rewardGood = 10;
+    public int rewardGreat = 20;
 
-    private void Start()
+    private void Start() 
     {
-        UpdateScoreUI(); // Update tampilan UI saat permainan dimulai
-        UpdateMoneyUI(); // Update tampilan UI uang
+        
+        LoadScoreAndMoney();    
     }
 
     // Menambah skor
@@ -36,40 +27,20 @@ public class ScoreManager : MonoBehaviour
         score += value;
         Debug.Log($"Score added: {value}. Current score: {score}");
 
-        // Memberikan feedback berdasarkan nilai skor saat ini
-        GiveFeedback(score);
+        GiveReward(); // Memberikan reward setelah skor ditambahkan
 
-        // Memberikan reward setelah feedback diberikan
-        GiveReward();
-
-        UpdateScoreUI(); // Update UI setelah skor ditambahkan
+        SaveScoreAndMoney();
     }
 
-    // Memberikan feedback berdasarkan skor
-    private void GiveFeedback(int currentScore)
+    // Reset skor dan uang
+    public void ResetScoreAndMoney()
     {
-        if (currentScore >= greatScoreThreshold)
-        {
-            feedbackText.text = "Feedback   : Sangat Bagus!";
-            Debug.Log("Feedback: Sangat Bagus!");
-        }
-        else if (currentScore >= goodScoreThreshold)
-        {
-            feedbackText.text = "Feedback   : Bagus!";
-            Debug.Log("Feedback: Bagus!");
-        }
-        else if (currentScore >= poorScoreThreshold)
-        {
-            feedbackText.text = "Feedback   : Kurang Bagus";
-            Debug.Log("Feedback: Kurang Bagus");
-        }
-        else
-        {
-            feedbackText.text = "Feedback   : Tidak Bagus";
-        }
+        score = 0;
+        money = 0;
+        SaveScoreAndMoney();
     }
 
-    // Memberikan reward berdasarkan feedback
+    // Memberikan reward berdasarkan skor saat ini
     private void GiveReward()
     {
         if (score >= greatScoreThreshold)
@@ -79,39 +50,55 @@ public class ScoreManager : MonoBehaviour
         }
         else if (score >= goodScoreThreshold)
         {
-            if (score < greatScoreThreshold)
-            {
-                money = rewardGood;
-                Debug.Log($"Reward given: {rewardGood}. Current money: {money}");
-            }
+            money = rewardGood;
+            Debug.Log($"Reward given: {rewardGood}. Current money: {money}");
         }
         else if (score >= poorScoreThreshold)
         {
-            if (score < goodScoreThreshold) // Untuk skor antara 20 sampai 49
-            {
-                money = rewardPoor; // Tetap 5 reward
-                Debug.Log($"Reward given: {rewardPoor}. Current money: {money}");
-            }
-        }
-
-        UpdateMoneyUI(); // Update UI uang setelah menerima reward
-    }
-
-    // Update UI untuk menampilkan skor
-    private void UpdateScoreUI()
-    {
-        if (scoreText != null)
-        {
-            scoreText.text = $"Score    : {score}";
+            money = rewardPoor;
+            Debug.Log($"Reward given: {rewardPoor}. Current money: {money}");
         }
     }
 
-    // Update UI untuk menampilkan uang
-    private void UpdateMoneyUI()
+    // Simpan skor dan uang ke PlayerPrefs sebelum pindah scene
+    public void SaveScoreAndMoney()
     {
-        if (moneyText != null)
-        {
-            moneyText.text = $"Reward    : $ {money}";
-        }
+        PlayerPrefs.SetInt("PlayerScore", score);
+        PlayerPrefs.SetInt("PlayerMoney", money);
+        PlayerPrefs.Save();
+        Debug.Log($"Score and money saved: {score}, {money}");
+    }
+
+    public void LoadScoreAndMoney()
+    {
+        score = PlayerPrefs.GetInt("PlayerScore", 0);
+        money = PlayerPrefs.GetInt("PlayerMoney", 0);
+
+        Debug.Log($"Score and money loaded: {score}, {money}");
+    }
+
+    // Fungsi untuk mendapatkan skor dan uang dari luar
+    public int GetScore()
+    {
+        return score;
+    }
+
+    public int GetMoney()
+    {
+        return money;
+    }
+
+    // Fungsi untuk mengatur skor dari luar (GameManager)
+    public void SetScore(int newScore)
+    {
+        score = newScore;
+        SaveScoreAndMoney();
+    }
+
+    // Fungsi untuk mengatur uang dari luar (GameManager)
+    public void SetMoney(int newMoney)
+    {
+        money = newMoney;
+        SaveScoreAndMoney();
     }
 }

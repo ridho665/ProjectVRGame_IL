@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -6,16 +7,26 @@ using UnityEngine;
 public class ShopManager : MonoBehaviour
 {
     [Header("Shop Items")]
-    public List<ItemData> availableItems;
-    public GameObject[] spawnPoints; // Array untuk menyimpan GameObject yang digunakan sebagai spawn points
+    [SerializeField] private List<ItemData> availableItems;
+    [SerializeField] private GameObject[] spawnPoints; // Array untuk menyimpan GameObject yang digunakan sebagai spawn points
     private int currentSpawnIndex = 0; // Index posisi spawn saat ini
 
     [Header("UI Elements")]
-    public TextMeshProUGUI budgetText; // Referensi ke TextMeshPro untuk menampilkan budget di UI
-    public TextMeshProUGUI timerText;  // Referensi ke TextMeshPro untuk menampilkan timer di UI
+    [SerializeField] private TextMeshProUGUI budgetText; // Referensi ke TextMeshPro untuk menampilkan budget di UI
+    [SerializeField] private TextMeshProUGUI timerText;  // Referensi ke TextMeshPro untuk menampilkan timer di UI
+    [SerializeField] private TextMeshProUGUI moneyText;  // Referensi ke TextMeshPro untuk menampilkan uang di UI
 
     private ItemData selectedItem;
     private float playerBudget;
+    public int playerMoney;
+
+
+    [Header("Gameplay Settings")]
+    [SerializeField] private Transform setPointGameplay;
+    [SerializeField] private GameObject UI_Gameover;
+    [SerializeField] private FadeScreen fadeScreen;
+    [SerializeField] private GameObject player;
+    [SerializeField] private ScoreManager scoreManager;
 
     [Header("Timer Settings")]
     private float taskDuration; // Waktu tugas dalam detik yang diterima dari TaskManager
@@ -24,6 +35,7 @@ public class ShopManager : MonoBehaviour
     private void Start()
     {
         UpdateBudgetUI(); // Inisialisasi tampilan budget di UI
+        UpdateMoneyUI();  // Inisialisasi tampilan uang di UI
     }
 
     private void Update()
@@ -31,26 +43,79 @@ public class ShopManager : MonoBehaviour
         if (currentTime > 0)
         {
             currentTime -= Time.deltaTime;
+            if (currentTime < 0)
+            {
+                currentTime = 0; // Set ke 0 jika nilai negatif
+            }
             UpdateTimerUI(); // Update tampilan timer di UI setiap frame
+
+            if (currentTime == 0)
+            {
+                HandleTimeOut();
+            }
         }
-        else if (currentTime < 0)
+    }
+
+    private void HandleTimeOut()
+    {
+        Debug.Log("Task time has run out!");
+
+        if (scoreManager != null)
         {
-            currentTime = 0;
-            Debug.Log("Task time has run out!");
-            // Lakukan aksi jika waktu habis, misalnya berikan penalti atau tampilkan notifikasi
+            // scoreManager.AddRewardAndResetScore();
+            UpdateMoneyUI(); // Update UI setelah menambahkan reward
+        }
+
+        // Jalankan FadeOut terlebih dahulu, lalu aktifkan UI Gameover dan pindahkan player
+        if (fadeScreen != null)
+        {
+            StartCoroutine(GameOverSequence());
+        }
+        else
+        {
+            TriggerGameOver();
+        }
+    }
+
+    private IEnumerator GameOverSequence()
+    {
+        fadeScreen.FadeOut();
+        // Tunggu hingga fade selesai (sesuai dengan durasi fade)
+        yield return new WaitForSeconds(fadeScreen.fadeDuration);
+
+        TriggerGameOver();
+
+        fadeScreen.FadeIn();
+    }
+
+    private void TriggerGameOver()
+    {
+        // Pindahkan player ke posisi SetPointGameplay
+        if (setPointGameplay != null && player != null)
+        {
+            player.transform.position = setPointGameplay.position;
+            Debug.Log($"Player moved to SetPointGameplay at position: {setPointGameplay.position}");
+        }
+
+        // Aktifkan UI Gameover
+        if (UI_Gameover != null)
+        {
+            UI_Gameover.SetActive(true);
+            Debug.Log("Game over UI activated.");
         }
     }
 
     // Membuka shop dan menampilkan item-item yang tersedia
-    public void OpenShop()
+    public void AddMoney(int moneyToAdd)
     {
-        Debug.Log("Shop opened.");
-        UpdateBudgetUI(); // Update UI saat membuka shop
-
-        foreach (ItemData item in availableItems)
-        {
-            Debug.Log($"Item: {item.itemName} - Price: {item.price} - Style: {item.styleScore}");
-        }
+        scoreManager.SetMoney(scoreManager.GetMoney() + moneyToAdd); // Tambahkan uang ke skor ShopManager
+        UpdateMoneyUI(); // Update UI setelah menambahkan uang
+        Debug.Log($"Added {moneyToAdd} to shop. New total money: {scoreManager.GetMoney()}");
+    }
+    public void SetPlayerMoney(int money)
+    {
+        playerMoney = money;
+        UpdateMoneyUI(); // Update UI untuk menampilkan uang terbaru
     }
 
     // Set budget yang diterima dari TaskManager
@@ -141,6 +206,15 @@ public class ShopManager : MonoBehaviour
         if (timerText != null)
         {
             timerText.text = FormatTime(currentTime); // Format waktu dalam format MM:SS
+        }
+    }
+
+    // Update UI untuk menampilkan uang yang dimiliki pemain
+    private void UpdateMoneyUI()
+    {
+        if (moneyText != null && scoreManager != null)
+        {
+            moneyText.text = $"Money    : $ {playerMoney:N0}"; // Update uang yang ada di UI
         }
     }
 
