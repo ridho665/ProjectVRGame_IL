@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Task
 {
-    public float budget;           // Budget untuk task
+    public int budget;           // Budget untuk task
     public string style;           // Gaya bangunan (misal: modern, klasik, dll.)
     public string room;            // Ruangan (misal: kamar tidur, ruang tamu, dapur, dll.)
 
@@ -17,14 +17,15 @@ public class Task
     private string[] availableRooms = { "Kitchen Room" };
 
     // Daftar budget yang tersedia
-    private float[] availableBudgets = { 10, 15, 20, 25, 30 };
+    // private float[] availableBudgets = { 1800, 1850, 1900, 1950, 2000, 2050, 2100, 2150, 2200, 2250, 2300, 2350, 2400, 2450, 2500 };
 
-    private float[] availableTimes = { 120 };
+    private float[] availableTimes = { 480 };
 
     // Constructor untuk membuat task baru dengan budget, style, dan ruangan acak
     public void Initialize()
     {
-        budget = availableBudgets[Random.Range(0, availableBudgets.Length)];
+        // budget = availableBudgets[Random.Range(0, availableBudgets.Length)];
+        budget = Random.Range(1800, 2501);
         style = availableStyles[Random.Range(0, availableStyles.Length)];
         room = availableRooms[Random.Range(0, availableRooms.Length)];
         time = availableTimes[Random.Range(0, availableTimes.Length)];

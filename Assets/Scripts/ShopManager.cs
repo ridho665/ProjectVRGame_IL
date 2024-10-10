@@ -125,6 +125,10 @@ public class ShopManager : MonoBehaviour
         Debug.Log($"Player Budget set to: {playerBudget}");
         UpdateBudgetUI(); // Update UI saat budget diatur
     }
+    public float GetPlayerBudget()
+    {
+        return playerBudget;
+    }
 
     // Set waktu tugas yang diterima dari TaskManager
     public void SetTaskTime(float time)
@@ -157,6 +161,63 @@ public class ShopManager : MonoBehaviour
         {
             Debug.Log("Not enough budget or no item selected.");
         }
+    }
+
+    public void BuyPowerUp(string powerUpType)
+    {
+        int powerUpCost = 0;
+
+        switch (powerUpType)
+        {
+            case "Sprint":
+                powerUpCost = 50; // Harga power-up Sprint
+                if (playerMoney >= powerUpCost)
+                {
+                    playerMoney -= powerUpCost;
+                    // Tambahkan efek power-up sprint di sini
+                    Debug.Log("Purchased Sprint power-up.");
+                }
+                else
+                {
+                    Debug.Log("Not enough money to purchase Sprint power-up.");
+                }
+                break;
+
+            case "BudgetBooster":
+                powerUpCost = 100; // Harga Budget Booster
+                if (playerMoney >= powerUpCost)
+                {
+                    playerMoney -= powerUpCost;
+                    playerBudget += 100; // Tambahkan budget sebagai efek dari Budget Booster
+                    UpdateBudgetUI();
+                    Debug.Log("Purchased Budget Booster power-up.");
+                }
+                else
+                {
+                    Debug.Log("Not enough money to purchase Budget Booster.");
+                }
+                break;
+
+            case "TimeExtension":
+                powerUpCost = 150; // Harga Time Extension
+                if (playerMoney >= powerUpCost)
+                {
+                    playerMoney -= powerUpCost;
+                    currentTime += 120; // Tambahkan 60 detik ke timer
+                    Debug.Log("Purchased Time Extension power-up.");
+                }
+                else
+                {
+                    Debug.Log("Not enough money to purchase Time Extension.");
+                }
+                break;
+
+            default:
+                Debug.Log("Invalid power-up type.");
+                break;
+        }
+
+        UpdateMoneyUI(); // Update UI setelah membeli power-up
     }
 
     // Menginstansiasi item di posisi spawn yang telah ditentukan

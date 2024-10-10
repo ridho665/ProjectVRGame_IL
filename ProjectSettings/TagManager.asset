@@ -5,10 +5,50 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
-  - ChairModern
-  - ChairClassic
-  - TableClassic
-  - TableModern
+  - KursiKlasik
+  - KursiModern
+  - MejaModern
+  - MejaKlasik
+  - MejaRiasKlasik
+  - MejaRiasModern
+  - RakBukuKlasik
+  - RakBukuModern
+  - SofaKlasik
+  - SofaModern
+  - TempatTidurKlasik
+  - TempatTidurModern
+  - KomporKlasik
+  - KomporModern
+  - KomputerKlasik
+  - KomputerModern
+  - KulkasKlasik
+  - KulkasModern
+  - MesinCuciKlasik
+  - MesinCuciModern
+  - MicrowaveKlasik
+  - MicrowaveModern
+  - RakTvKlasik
+  - RakTvModern
+  - TvKlasik
+  - TvModern
+  - BingkaiFotoKlasik
+  - BingkaiFotoModern
+  - BonsaiKlasik
+  - BonsaiModern
+  - CerminKlasik
+  - CerminModern
+  - JamDindingKlasik
+  - JamDindingModern
+  - KarpetKlasik
+  - KarpetModern
+  - LampuHiasKlasik
+  - LampuHiasModern
+  - PatungHiasKlasik
+  - PatungHiasModern
+  - TiraiKlasik
+  - TiraiModern
+  - VasBungaKlasik
+  - VasBungaModern
   layers:
   - Default
   - TransparentFX

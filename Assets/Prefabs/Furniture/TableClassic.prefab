@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3553116266600180269}
   m_Layer: 3
   m_Name: coffeTable
-  m_TagString: TableClassic
+  m_TagString: MejaKlasik
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

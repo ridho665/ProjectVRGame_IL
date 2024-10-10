@@ -6,14 +6,20 @@ public class ScoreManager : MonoBehaviour
     private int money = 0; // Uang yang diperoleh pemain
 
     // Thresholds
-    private int poorScoreThreshold = 20;
-    private int goodScoreThreshold = 50;
-    private int greatScoreThreshold = 100;
+    private int poorScoreThreshold = 50;
+    private int goodScoreThreshold = 100;
+    private int greatScoreThreshold = 150;
+    private int exellentScoreThreshold = 200;
+    private int amazingScoreThreshold = 250;
+
 
     // Reward Values
-    public int rewardPoor = 5;
-    public int rewardGood = 10;
-    public int rewardGreat = 20;
+    public int rewardPoor = 10;
+    public int rewardGood = 20;
+    public int rewardGreat = 30;
+    public int rewardExellent = 40;
+    public int rewardAmazing = 50;
+
 
     private void Start() 
     {
@@ -43,15 +49,25 @@ public class ScoreManager : MonoBehaviour
     // Memberikan reward berdasarkan skor saat ini
     private void GiveReward()
     {
-        if (score >= greatScoreThreshold)
+        if (score >= amazingScoreThreshold)
+        {
+            money = rewardAmazing;
+            Debug.Log($"Reward given: {rewardGreat}. Current money: {money}");
+        }
+        else if (score >= exellentScoreThreshold)
+        {
+            money = rewardExellent;
+            Debug.Log($"Reward given: {rewardGood}. Current money: {money}");
+        }
+        else if (score >= greatScoreThreshold)
         {
             money = rewardGreat;
-            Debug.Log($"Reward given: {rewardGreat}. Current money: {money}");
+            Debug.Log($"Reward given: {rewardPoor}. Current money: {money}");
         }
         else if (score >= goodScoreThreshold)
         {
             money = rewardGood;
-            Debug.Log($"Reward given: {rewardGood}. Current money: {money}");
+            Debug.Log($"Reward given: {rewardPoor}. Current money: {money}");
         }
         else if (score >= poorScoreThreshold)
         {

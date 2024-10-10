@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     // Data untuk menyimpan budget, style, room, time
     [Header("Data")]
-    public float playerBudget;
+    public int playerBudget;
     public string playerStyle;
     public string playerRoom;
     public float playerTime;
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Metode untuk menyimpan data task (budget, style, room, time, money)
-    public void SaveGameData(float budget, string style, string room, float time, int money)
+    public void SaveGameData(int budget, string style, string room, float time, int money)
     {
         playerBudget = budget;
         playerStyle = style;
