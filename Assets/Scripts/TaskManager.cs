@@ -113,6 +113,7 @@ public class TaskManager : MonoBehaviour
             int currentMoney = scoreManager.GetMoney();
             GameManager.Instance.AddMoney(currentMoney);
             shopManager.AddMoney(currentMoney);
+            scoreManager.CheckWinOrLose(); 
         }
 
         scoreManager.ResetScoreAndMoney();

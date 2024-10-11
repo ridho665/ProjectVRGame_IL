@@ -80,15 +80,18 @@ public class GameManager : MonoBehaviour
         playerTime = time;
         playerMoney = money;
 
+
         // if (scoreManager != null)
         // {
         //     scoreManager.SaveScoreAndMoney();
         // }
     }
 
+
     public void AddMoney(int amount)
     {
         playerMoney += amount; // Tambahkan uang
+        SaveGameData(0, "", "", 0, playerMoney);
     }
 
     public void DeductMoney(int amount)

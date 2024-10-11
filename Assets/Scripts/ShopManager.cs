@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ShopManager : MonoBehaviour
 {
@@ -28,12 +29,22 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private ScoreManager scoreManager;
 
+    [Header("PowerUp Data")]
+    [SerializeField] private float sprintMultiplier = .2f;
+    [SerializeField] private float sprintDuration = 5f;
+    private float currentSprintMultiplier = 1f;
+    private bool isSprinting;
+    private ContinuousMoveProviderBase moveProvider;
+    private Coroutine sprintCoroutine;
+
     [Header("Timer Settings")]
     private float taskDuration; // Waktu tugas dalam detik yang diterima dari TaskManager
     private float currentTime;
 
     private void Start()
     {
+        moveProvider = FindObjectOfType<ContinuousMoveProviderBase>();
+
         UpdateBudgetUI(); // Inisialisasi tampilan budget di UI
         UpdateMoneyUI();  // Inisialisasi tampilan uang di UI
     }
@@ -174,7 +185,7 @@ public class ShopManager : MonoBehaviour
                 if (playerMoney >= powerUpCost)
                 {
                     playerMoney -= powerUpCost;
-                    // Tambahkan efek power-up sprint di sini
+                    AddSprintPowerUp();
                     Debug.Log("Purchased Sprint power-up.");
                 }
                 else
@@ -218,6 +229,33 @@ public class ShopManager : MonoBehaviour
         }
 
         UpdateMoneyUI(); // Update UI setelah membeli power-up
+    }
+
+    private void AddSprintPowerUp()
+    {
+        currentSprintMultiplier += sprintMultiplier;
+
+        if (sprintCoroutine != null)
+        {
+            StopCoroutine(sprintCoroutine);
+        }
+
+        sprintCoroutine = StartCoroutine(Sprint());
+    }
+
+    private IEnumerator Sprint()
+    {
+        isSprinting = true;
+        moveProvider.moveSpeed *= currentSprintMultiplier; // Gandakan kecepatan
+        Debug.Log("Sprint multiplier: " + currentSprintMultiplier);
+        
+        yield return new WaitForSeconds(sprintDuration); // Tunggu selama durasi sprint
+        
+        moveProvider.moveSpeed /= currentSprintMultiplier; // Kembalikan kecepatan ke nilai semula
+        currentSprintMultiplier = 1f; // Reset multiplier setelah durasi selesai
+        isSprinting = false;
+
+        Debug.Log("Sprint power-up ended.");
     }
 
     // Menginstansiasi item di posisi spawn yang telah ditentukan

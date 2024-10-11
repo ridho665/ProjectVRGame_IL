@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dining Room.unity
     guid: e34c1258e1414bd438d6c46ab344a671
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: 9df13a0b836b8c54c8c43577b1263618
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e76218e8a402d0043ac5802f87f3a0c6,
       type: 2}

@@ -51,7 +51,7 @@ public class ScoreUIManager : MonoBehaviour
     {
         UpdateScoreUI();
         UpdateMoneyUI();
-        // GiveFeedback(scoreManager.GetScore());
+
         UpdateStarsUI(scoreManager.GetScore());
     }
 
@@ -72,30 +72,6 @@ public class ScoreUIManager : MonoBehaviour
         if (moneyText != null)
         {
             moneyText.text = $"Reward    : $ {money}";
-        }
-    }
-
-    // Menampilkan feedback di UI berdasarkan skor
-    private void GiveFeedback(int currentScore)
-    {
-        if (currentScore >= greatScoreThreshold)
-        {
-            feedbackText.text = "Feedback   : Sangat Bagus!";
-            Debug.Log("Feedback: Sangat Bagus!");
-        }
-        else if (currentScore >= goodScoreThreshold)
-        {
-            feedbackText.text = "Feedback   : Bagus!";
-            Debug.Log("Feedback: Bagus!");
-        }
-        else if (currentScore >= poorScoreThreshold)
-        {
-            feedbackText.text = "Feedback   : Kurang Bagus";
-            Debug.Log("Feedback: Kurang Bagus");
-        }
-        else
-        {
-            feedbackText.text = "Feedback   : Tidak Bagus";
         }
     }
 

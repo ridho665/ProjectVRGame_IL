@@ -28,7 +28,7 @@ public class AreaScoreObject : MonoBehaviour
                 break;
 
             case "MejaKlasik":
-                scoreManager.AddScore(10); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(50); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "MejaRiasModern":
