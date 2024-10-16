@@ -14,7 +14,7 @@ public class Task
     private string[] availableStyles = { "Modern", "Classic" };
 
     // List jenis ruangan yang akan diacak
-    private string[] availableRooms = { "Kitchen Room" };
+    private string[] availableRooms = { "Kitchen Room", "Work Room" };
 
     // Daftar budget yang tersedia
     // private float[] availableBudgets = { 1800, 1850, 1900, 1950, 2000, 2050, 2100, 2150, 2200, 2250, 2300, 2350, 2400, 2450, 2500 };
