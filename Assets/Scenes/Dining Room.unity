@@ -4726,6 +4726,14 @@ MonoBehaviour:
   rewardPoor: 5
   rewardGood: 10
   rewardGreat: 20
+  rewardExellent: 40
+  rewardAmazing: 50
+  highStarCount: 0
+  lowStarCount: 0
+  winCondition: 5
+  loseCondition: 3
+  scoreBarRect: {fileID: 0}
+  maxWidth: 100
 --- !u!4 &306776738
 Transform:
   m_ObjectHideFlags: 0
@@ -9404,7 +9412,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskUI: {fileID: 0}
   scoreTaskUI: {fileID: 0}
-  taskDescriptionText: {fileID: 0}
   acceptButton: {fileID: 0}
   rejectButton: {fileID: 0}
   doneButton: {fileID: 0}
@@ -15542,8 +15549,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 664461521}
   m_HandleRect: {fileID: 664461520}
   m_Direction: 2
-  m_Value: -0.0000046526243
-  m_Size: 0.67621964
+  m_Value: -0.00000024487494
+  m_Size: 0.67634046
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -18803,7 +18810,6 @@ MonoBehaviour:
   teleportButton: {fileID: 943544370}
   targetSceneName: Gameplay
   fadeScreen: {fileID: 877580108}
-  scoreManager: {fileID: 0}
 --- !u!114 &1279591662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21339,7 +21345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 498.5013}
+  m_AnchoredPosition: {x: 0, y: 498.49908}
   m_SizeDelta: {x: 0, y: 1540.2}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1460725587
@@ -23116,11 +23122,20 @@ MonoBehaviour:
   budgetText: {fileID: 1519463544}
   timerText: {fileID: 297099513}
   moneyText: {fileID: 2117048225}
+  playerMoney: 0
   setPointGameplay: {fileID: 1376969369}
   UI_Gameover: {fileID: 1279591658}
   fadeScreen: {fileID: 877580108}
   player: {fileID: 760419343}
   scoreManager: {fileID: 306776737}
+  sprintMultiplier: 0.2
+  sprintDuration: 5
+  buySprintButton: {fileID: 0}
+  buyBudgetBoosterButton: {fileID: 0}
+  buyTimeExtensionButton: {fileID: 0}
+  selectSprintButton: {fileID: 0}
+  selectBudgetBoosterButton: {fileID: 0}
+  selectTimeExtensionButton: {fileID: 0}
 --- !u!1 &1557032425
 GameObject:
   m_ObjectHideFlags: 0

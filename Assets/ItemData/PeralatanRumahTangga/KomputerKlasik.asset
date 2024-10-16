@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KomputerKlasik
   m_EditorClassIdentifier: 
   itemName: KomputerKlasik
-  itemPrefab: {fileID: 919132149155446097, guid: cc4bbee8182f3974a952bd36ecda19d5,
+  itemPrefab: {fileID: 6468027802013752670, guid: deeb6013182c1ef4691fef9be58163b6,
     type: 3}
   price: 300
   category: Accessories

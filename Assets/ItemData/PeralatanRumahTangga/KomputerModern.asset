@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KomputerModern
   m_EditorClassIdentifier: 
   itemName: KomputerModern
-  itemPrefab: {fileID: 919132149155446097, guid: cc4bbee8182f3974a952bd36ecda19d5,
+  itemPrefab: {fileID: 1093052414237601522, guid: 31cfac9db11f973479155c03a0425e60,
     type: 3}
   price: 300
   category: Accessories

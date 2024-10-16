@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 6855981219005875784}
   - component: {fileID: 3191509565250861459}
   - component: {fileID: 7317493444907670366}
-  m_Layer: 0
+  - component: {fileID: 6279260350625520954}
+  - component: {fileID: 8499931085656645493}
+  m_Layer: 3
   m_Name: classic book shelf
-  m_TagString: Untagged
+  m_TagString: RakBukuKlasik
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,6 +85,54 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6279260350625520954
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820569574178586201}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.019999998, y: 0.021035472, z: 0.15719555}
+  m_Center: {x: 0, y: -0.0005177366, z: 0.055179305}
+--- !u!54 &8499931085656645493
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820569574178586201}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &5473929384492066712
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +148,7 @@ GameObject:
   - component: {fileID: 1815753621147166638}
   - component: {fileID: 1617624876720792995}
   - component: {fileID: 3686329120062639953}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Packing (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +331,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1820569574178586201}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -411,7 +461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7884095691700901751}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RakBukuKlasik
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MejaKlasik
   m_EditorClassIdentifier: 
   itemName: MejaKlasik
-  itemPrefab: {fileID: 6264875452807978716, guid: 78eb665bd481bf448b247d6a1c3a7446,
+  itemPrefab: {fileID: 4340838762442686618, guid: 5d25ac1e97b4c4d45bc856dcd07767e0,
     type: 3}
   price: 50
   category: Furniture

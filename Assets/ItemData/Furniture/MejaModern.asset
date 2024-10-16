@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MejaModern
   m_EditorClassIdentifier: 
   itemName: MejaModern
-  itemPrefab: {fileID: 6264875452807978716, guid: 78eb665bd481bf448b247d6a1c3a7446,
+  itemPrefab: {fileID: 1995850802633886183, guid: 8c4e9e7db6a46264eb89e58b29e81214,
     type: 3}
   price: 25
   category: Furniture

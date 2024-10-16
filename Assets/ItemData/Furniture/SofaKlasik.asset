@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SofaKlasik
   m_EditorClassIdentifier: 
   itemName: SofaKlasik
-  itemPrefab: {fileID: 6264875452807978716, guid: 78eb665bd481bf448b247d6a1c3a7446,
+  itemPrefab: {fileID: 4671328583899596299, guid: c93895b6a56b2a445bc7add4c21e345d,
     type: 3}
   price: 50
   category: Furniture

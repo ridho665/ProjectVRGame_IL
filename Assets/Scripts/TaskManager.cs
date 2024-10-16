@@ -80,6 +80,7 @@ public class TaskManager : MonoBehaviour
         // Simpan status UI ke PlayerPrefs
         PlayerPrefs.SetInt("TaskUIActive", isTaskUIActive ? 1 : 0);
         PlayerPrefs.SetInt("ScoreTaskUIActive", isScoreTaskUIActive ? 1 : 0);
+        PlayerPrefs.SetInt("IsNewGame", 0);
         PlayerPrefs.Save();
 
         // Simpan data task ke GameManager
@@ -90,6 +91,8 @@ public class TaskManager : MonoBehaviour
 
         // Setel waktu task ke ShopManager
         shopManager.SetTaskTime(currentTask.time);
+
+        // gameManager.ContinueGame();
 
         // Pindahkan player ke building mode (pindah scene sesuai dengan room)
         StartCoroutine(EnterBuildingModeWithFade(currentTask.room));

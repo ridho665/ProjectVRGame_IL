@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KursiKlasik
   m_EditorClassIdentifier: 
   itemName: KursiKlasik
-  itemPrefab: {fileID: 6195482693755353331, guid: 8305fbe708605a74584f8208aa42051e,
+  itemPrefab: {fileID: 8435283748396250097, guid: f2cb5c254c44a9244a907aa2be4bfe7f,
     type: 3}
   price: 25
   category: Furniture

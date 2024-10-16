@@ -49,6 +49,8 @@ TagManager:
   - TiraiModern
   - VasBungaKlasik
   - VasBungaModern
+  - ChairClassic
+  - TableModern
   layers:
   - Default
   - TransparentFX
@@ -56,7 +58,7 @@ TagManager:
   - Furniture
   - Water
   - UI
-  - 
+  - Ipad
   - 
   - 
   - 

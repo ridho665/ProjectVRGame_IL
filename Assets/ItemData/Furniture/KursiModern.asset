@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KursiModern
   m_EditorClassIdentifier: 
   itemName: KursiModern
-  itemPrefab: {fileID: 6195482693755353331, guid: 8305fbe708605a74584f8208aa42051e,
+  itemPrefab: {fileID: 3974016580444783967, guid: e76dcbb06609363438c3ed76986b247c,
     type: 3}
   price: 15
   category: Furniture

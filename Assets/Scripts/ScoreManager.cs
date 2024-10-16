@@ -1,3 +1,4 @@
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -31,10 +32,20 @@ public class ScoreManager : MonoBehaviour
     private bool hasLowStarAwarded = false;  // Sudahkah pemain mendapatkan low star?
     private bool isGameStarted = false;
 
+    public RectTransform scoreBarRect;
+
+    public float maxWidth = 100f;
+
     private void Start() 
     {
         CheckInitialScore();
-        LoadScoreAndMoney();    
+        LoadScoreAndMoney();  
+         
+    }
+
+    private void Update() 
+    {
+        UpdateScoreBar();     
     }
 
     private void CheckInitialScore()
@@ -58,12 +69,23 @@ public class ScoreManager : MonoBehaviour
         SaveScoreAndMoney();
     }
 
+    private void UpdateScoreBar()
+    {
+        if (scoreBarRect != null)
+        {
+            // Hitung lebar baru berdasarkan skor saat ini
+            float newWidth = Mathf.Clamp((score / (float)amazingScoreThreshold) * maxWidth, 0, maxWidth);
+            scoreBarRect.sizeDelta = new Vector2(newWidth, scoreBarRect.sizeDelta.y); // Ubah width
+        }
+    }
+
     // Reset skor dan uang
     public void ResetScoreAndMoney()
     {
         score = 0;
         // money = 0;
         SaveScoreAndMoney();
+        UpdateScoreBar();
     }
 
     private void GiveReward()
@@ -166,6 +188,7 @@ public class ScoreManager : MonoBehaviour
         lowStarCount = PlayerPrefs.GetInt("LowStarCount", 0);
 
         Debug.Log($"Score and money loaded: {score}, {money}");
+        UpdateScoreBar();
     }
 
     // Fungsi untuk mendapatkan skor dan uang dari luar
@@ -184,6 +207,7 @@ public class ScoreManager : MonoBehaviour
     {
         score = newScore;
         SaveScoreAndMoney();
+        UpdateScoreBar();
     }
 
     // Fungsi untuk mengatur uang dari luar (GameManager)

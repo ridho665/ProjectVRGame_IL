@@ -32,6 +32,13 @@ public class ShopManager : MonoBehaviour
     [Header("PowerUp Data")]
     [SerializeField] private float sprintMultiplier = .2f;
     [SerializeField] private float sprintDuration = 5f;
+
+    [SerializeField] private GameObject buySprintButton;
+    [SerializeField] private GameObject buyBudgetBoosterButton;
+    [SerializeField] private GameObject buyTimeExtensionButton;
+    [SerializeField] private GameObject selectSprintButton;
+    [SerializeField] private GameObject selectBudgetBoosterButton;
+    [SerializeField] private GameObject selectTimeExtensionButton;
     private float currentSprintMultiplier = 1f;
     private bool isSprinting;
     private ContinuousMoveProviderBase moveProvider;
@@ -41,12 +48,28 @@ public class ShopManager : MonoBehaviour
     private float taskDuration; // Waktu tugas dalam detik yang diterima dari TaskManager
     private float currentTime;
 
+    private bool isSprintPurchased = false;
+    private bool isBudgetBoosterPurchased = false;
+    private bool isTimeExtensionPurchased = false;
+
+    private bool isSprintUsedInScene = false;
+    private bool isBudgetBoosterUsedInScene = false;
+    private bool isTimeExtensionUsedInScene = false;
+
     private void Start()
     {
         moveProvider = FindObjectOfType<ContinuousMoveProviderBase>();
 
+        ResetPowerUpUsage();
+
+        isSprintPurchased = PlayerPrefs.GetInt("SprintPurchased", 0) == 1;
+        isBudgetBoosterPurchased = PlayerPrefs.GetInt("BudgetBoosterPurchased", 0) == 1;
+        isTimeExtensionPurchased = PlayerPrefs.GetInt("TimeExtensionPurchased", 0) == 1;
+
         UpdateBudgetUI(); // Inisialisasi tampilan budget di UI
         UpdateMoneyUI();  // Inisialisasi tampilan uang di UI
+
+        UpdatePowerUpButtons();
     }
 
     private void Update()
@@ -65,6 +88,17 @@ public class ShopManager : MonoBehaviour
                 HandleTimeOut();
             }
         }
+    }
+
+    private void UpdatePowerUpButtons()
+    {
+        buySprintButton.SetActive(!isSprintPurchased);
+        buyBudgetBoosterButton.SetActive(!isBudgetBoosterPurchased);
+        buyTimeExtensionButton.SetActive(!isTimeExtensionPurchased);
+        
+        selectSprintButton.SetActive(isSprintPurchased);
+        selectBudgetBoosterButton.SetActive(isBudgetBoosterPurchased);
+        selectTimeExtensionButton.SetActive(isTimeExtensionPurchased);
     }
 
     private void HandleTimeOut()
@@ -181,41 +215,75 @@ public class ShopManager : MonoBehaviour
         switch (powerUpType)
         {
             case "Sprint":
-                powerUpCost = 50; // Harga power-up Sprint
-                if (playerMoney >= powerUpCost)
+                if (!isSprintPurchased )
                 {
-                    playerMoney -= powerUpCost;
-                    AddSprintPowerUp();
-                    Debug.Log("Purchased Sprint power-up.");
+                    powerUpCost = 50; // Harga power-up Sprint
+                    if (playerMoney >= powerUpCost)
+                    {
+                        playerMoney -= powerUpCost;
+                        isSprintPurchased = true;
+                        PlayerPrefs.SetInt("SprintPurchased", 1);
+                        // AddSprintPowerUp();
+                        selectSprintButton.SetActive(true);
+                        buySprintButton.SetActive(false);
+                        Debug.Log("Purchased Sprint power-up.");
+                    }
+                    else
+                    {
+                        Debug.Log("Not enough money to purchase Sprint power-up.");
+                    }
                 }
                 else
                 {
-                    Debug.Log("Not enough money to purchase Sprint power-up.");
+                    Debug.Log("Sprint power-up already purchased.");
                 }
                 break;
 
             case "BudgetBooster":
-                powerUpCost = 100; // Harga Budget Booster
-                if (playerMoney >= powerUpCost)
+                if (!isBudgetBoosterPurchased)
                 {
-                    playerMoney -= powerUpCost;
-                    playerBudget += 100; // Tambahkan budget sebagai efek dari Budget Booster
-                    UpdateBudgetUI();
-                    Debug.Log("Purchased Budget Booster power-up.");
+                    powerUpCost = 100; // Harga Budget Booster
+                    if (playerMoney >= powerUpCost)
+                    {
+                        playerMoney -= powerUpCost;
+                        isBudgetBoosterPurchased = true;
+                        PlayerPrefs.SetInt("BudgetBoosterPurchased", 1);
+                        // playerBudget += 100; // Tambahkan budget sebagai efek dari Budget Booster
+                        UpdateBudgetUI();
+                        selectBudgetBoosterButton.SetActive(true);
+                        buyBudgetBoosterButton.SetActive(false);
+                        Debug.Log("Purchased Budget Booster power-up.");
+                    }
+                    else
+                    {
+                        Debug.Log("Not enough money to purchase Budget Booster.");
+                    }
                 }
                 else
                 {
-                    Debug.Log("Not enough money to purchase Budget Booster.");
+                    Debug.Log("Budget Booster power-up already purchased.");
                 }
                 break;
 
             case "TimeExtension":
-                powerUpCost = 150; // Harga Time Extension
-                if (playerMoney >= powerUpCost)
+                if (!isTimeExtensionPurchased)
                 {
-                    playerMoney -= powerUpCost;
-                    currentTime += 120; // Tambahkan 60 detik ke timer
-                    Debug.Log("Purchased Time Extension power-up.");
+                    powerUpCost = 150; // Harga Time Extension
+                    if (playerMoney >= powerUpCost)
+                    {
+                        playerMoney -= powerUpCost;
+                        isTimeExtensionPurchased = true; // Set Time Extension sebagai dibeli
+                        PlayerPrefs.SetInt("TimeExtensionPurchased", 1);
+                        // currentTime += 120; // Tambahkan 60 detik ke timer
+                        UpdateTimerUI();
+                        selectTimeExtensionButton.SetActive(true);
+                        buyTimeExtensionButton.SetActive(false);
+                        Debug.Log("Purchased Time Extension power-up.");
+                    }
+                    else
+                    {
+                        Debug.Log("Not enough money to purchase Time Extension.");
+                    }
                 }
                 else
                 {
@@ -229,6 +297,48 @@ public class ShopManager : MonoBehaviour
         }
 
         UpdateMoneyUI(); // Update UI setelah membeli power-up
+    }
+
+    public void SelectPowerUp(string powerUpType)
+    {
+        switch (powerUpType)
+        {
+            case "Sprint":
+                if (isSprintPurchased && !isSprintUsedInScene)
+                {
+                    AddSprintPowerUp();
+                    isSprintUsedInScene = true;
+                    // selectSprintButton.SetActive(false); // Sembunyikan tombol setelah dipilih
+                    Debug.Log("Sprint power-up activated.");
+                }
+                break;
+
+            case "BudgetBooster":
+                if (isBudgetBoosterPurchased && !isBudgetBoosterUsedInScene)
+                {
+                    playerBudget += 100; // Tambahkan efek budget booster
+                    UpdateBudgetUI();
+                    isBudgetBoosterUsedInScene = true;
+                    // selectBudgetBoosterButton.SetActive(false); // Sembunyikan tombol setelah dipilih
+                    Debug.Log("Budget Booster power-up activated.");
+                }
+                break;
+
+            case "TimeExtension":
+                if (isTimeExtensionPurchased && !isTimeExtensionUsedInScene)
+                {
+                    currentTime += 120; // Tambahkan 120 detik ke timer
+                    UpdateTimerUI();
+                    isTimeExtensionUsedInScene = true;
+                    // selectTimeExtensionButton.SetActive(false); // Sembunyikan tombol setelah dipilih
+                    Debug.Log("Time Extension power-up activated.");
+                }
+                break;
+
+            default:
+                Debug.Log("Invalid power-up type.");
+                break;
+        }
     }
 
     private void AddSprintPowerUp()
@@ -256,6 +366,26 @@ public class ShopManager : MonoBehaviour
         isSprinting = false;
 
         Debug.Log("Sprint power-up ended.");
+    }
+
+    public void ResetPowerUpStatus()
+    {
+        PlayerPrefs.SetInt("SprintPurchased", 0);
+        PlayerPrefs.SetInt("BudgetBoosterPurchased", 0);
+        PlayerPrefs.SetInt("TimeExtensionPurchased", 0);
+
+        // Pastikan juga variabel lokalnya di-reset
+        isSprintPurchased = false;
+        isBudgetBoosterPurchased = false;
+        isTimeExtensionPurchased = false;
+    }
+
+    public void ResetPowerUpUsage()
+    {
+        isSprintUsedInScene = false;
+        isBudgetBoosterUsedInScene = false;
+        isTimeExtensionUsedInScene = false;
+        Debug.Log("Power-up usage reset for new scene.");
     }
 
     // Menginstansiasi item di posisi spawn yang telah ditentukan

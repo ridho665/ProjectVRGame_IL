@@ -6,6 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    [Header("Player Spawn")]
+    public GameObject player1; // Player untuk New Game
+    public GameObject player2; // Player untuk Continue Game
+
     [Header("References")]
     public ShopManager shopManager;
     public ScoreManager scoreManager; // Referensi ke ScoreManager
@@ -49,6 +53,14 @@ public class GameManager : MonoBehaviour
         // Mencari ShopManager dan ScoreManager di scene baru jika ada
         shopManager = FindObjectOfType<ShopManager>();
         scoreManager = FindObjectOfType<ScoreManager>();
+
+        player1 = GameObject.Find("Player"); // Pastikan Player1 memiliki tag "Player1"
+        player2 = GameObject.Find("Player2");
+
+        if (scene.name == "Gameplay") // Hanya jalankan logika ini di scene "Gameplay"
+        {
+            SetPlayerBasedOnGameStatus();
+        }
 
         if (shopManager != null)
         {
@@ -164,5 +176,41 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogWarning("ShopManager belum diatur atau tidak ditemukan!");
         }
+    }
+
+    private void SetPlayerBasedOnGameStatus()
+    {
+        int isNewGame = PlayerPrefs.GetInt("IsNewGame", 1); // Default ke 1 (New Game)
+
+        if (isNewGame == 1)
+        {
+            // Jika new game, tampilkan player1 dan sembunyikan player2
+            if (player1 != null && player2 != null)
+            {
+                player1.SetActive(true);
+                player2.SetActive(false); // Aktifkan player1
+            }
+        }
+        else
+        {
+            // Jika continue game, sembunyikan player1 dan tampilkan player2
+            if (player1 != null && player2 != null) 
+            {
+                player1.SetActive(false);
+                player2.SetActive(true); // Sembunyikan player1
+            }
+        }
+    }
+
+    public void StartNewGame()
+    {
+        PlayerPrefs.SetInt("IsNewGame", 1); // Set status ke New Game
+        PlayerPrefs.Save();
+    }
+
+    public void ContinueGame()
+    {
+        PlayerPrefs.SetInt("IsNewGame", 0); // Set status ke Continue Game
+        PlayerPrefs.Save();
     }
 }
