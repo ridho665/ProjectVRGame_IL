@@ -32,8 +32,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.003, z: 0}
-  m_LocalScale: {x: 0.4766, y: 0.4766, z: 0.4766}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 170065792601483598}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -319,6 +319,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973b08831c9bf2a4c9161dfb908b6a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 0}
+  vfxObject: {fileID: 0}
+  furnitureObject: {fileID: 0}
+  delayAfterDestroy: 0.5
+  delayBetweenVFXAndFurniture: 0.5
 --- !u!1 &4671328583899596299
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 170065792601483598}
+  - component: {fileID: 4538196721970283009}
   m_Layer: 3
   m_Name: SofaKlasik
   m_TagString: Untagged
@@ -352,6 +358,23 @@ Transform:
   - {fileID: 2215009419411008689}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4538196721970283009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671328583899596299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b08831c9bf2a4c9161dfb908b6a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 0}
+  vfxObject: {fileID: 0}
+  furnitureObject: {fileID: 0}
+  delayAfterDestroy: 0.5
+  delayBetweenVFXAndFurniture: 0.5
 --- !u!1 &7183081665543823173
 GameObject:
   m_ObjectHideFlags: 0

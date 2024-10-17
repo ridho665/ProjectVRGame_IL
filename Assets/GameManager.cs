@@ -6,9 +6,16 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [Header("Player Spawn")]
-    public GameObject player1; // Player untuk New Game
-    public GameObject player2; // Player untuk Continue Game
+    // [Header("Player Spawn")]
+    // public GameObject player1; // Player untuk New Game
+    // public GameObject player2; // Player untuk Continue Game
+
+    [Header("Player Prefab")]
+    public GameObject player;
+
+    [Header("Spawn Points")]
+    public GameObject spawn1;
+    public GameObject spawn2;
 
     [Header("References")]
     public ShopManager shopManager;
@@ -54,8 +61,10 @@ public class GameManager : MonoBehaviour
         shopManager = FindObjectOfType<ShopManager>();
         scoreManager = FindObjectOfType<ScoreManager>();
 
-        player1 = GameObject.Find("Player"); // Pastikan Player1 memiliki tag "Player1"
-        player2 = GameObject.Find("Player2");
+        spawn1 = GameObject.Find("SpawnNewGame"); // Pastikan Player1 memiliki tag "Player1"
+        spawn2 = GameObject.Find("SpawnContinue");
+        player = GameObject.Find("Player");
+
 
         if (scene.name == "Gameplay") // Hanya jalankan logika ini di scene "Gameplay"
         {
@@ -184,20 +193,20 @@ public class GameManager : MonoBehaviour
 
         if (isNewGame == 1)
         {
-            // Jika new game, tampilkan player1 dan sembunyikan player2
-            if (player1 != null && player2 != null)
+            if (spawn1 != null && player != null)
             {
-                player1.SetActive(true);
-                player2.SetActive(false); // Aktifkan player1
+                player.transform.position = spawn1.transform.position;
+                player.transform.rotation = spawn1.transform.rotation;
+                Debug.Log("Player moved to spawn1 (New Game).");
             }
         }
         else
         {
-            // Jika continue game, sembunyikan player1 dan tampilkan player2
-            if (player1 != null && player2 != null) 
+            if (spawn2 != null && player != null)
             {
-                player1.SetActive(false);
-                player2.SetActive(true); // Sembunyikan player1
+                player.transform.position = spawn2.transform.position;
+                player.transform.rotation = spawn2.transform.rotation;
+                Debug.Log("Player moved to spawn2 (Continue Game).");
             }
         }
     }

@@ -339,8 +339,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4766, y: 0.4766, z: 0.4766}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4804371511104789604}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -626,6 +626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973b08831c9bf2a4c9161dfb908b6a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 0}
+  vfxObject: {fileID: 0}
+  furnitureObject: {fileID: 0}
+  delayAfterDestroy: 0.5
+  delayBetweenVFXAndFurniture: 0.5
 --- !u!1 &7535005273148420724
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4804371511104789604}
+  - component: {fileID: 1644882798884452627}
   m_Layer: 3
   m_Name: TempatTidurKlasik
   m_TagString: Untagged
@@ -659,3 +665,20 @@ Transform:
   - {fileID: 2988775694894912616}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1644882798884452627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535005273148420724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973b08831c9bf2a4c9161dfb908b6a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToDestroy: {fileID: 0}
+  vfxObject: {fileID: 0}
+  furnitureObject: {fileID: 0}
+  delayAfterDestroy: 0.5
+  delayBetweenVFXAndFurniture: 0.5
