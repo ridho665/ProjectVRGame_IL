@@ -7,7 +7,7 @@ public class DestoryGameObject : MonoBehaviour
     public GameObject vfxObject;        // Objek VFX yang akan diaktifkan setelah penghancuran
     public GameObject furnitureObject;  // Objek Furniture yang akan diaktifkan setelah VFX
 
-    public float delayAfterDestroy = 0.5f; // Penundaan setelah menghancurkan objectToDestroy
+    // public float delayAfterDestroy = 0.5f; // Penundaan setelah menghancurkan objectToDestroy
     public float delayBetweenVFXAndFurniture = 0.5f; // Penundaan antara aktivasi VFX dan Furniture
 
     // Fungsi untuk menghancurkan object awal dan mengaktifkan VFX dan Furniture

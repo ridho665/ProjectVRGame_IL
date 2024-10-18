@@ -1080,8 +1080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d4b7ba7f9ef894cacc862483acd057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 926751046285859963, guid: 5a59ded1a968d24429598a8cac2591e2,
-    type: 3}
+  player: {fileID: 0}
   spawn1: {fileID: 0}
   spawn2: {fileID: 0}
   shopManager: {fileID: 0}
