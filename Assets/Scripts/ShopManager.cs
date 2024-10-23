@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class ShopManager : MonoBehaviour
@@ -28,6 +29,7 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private FadeScreen fadeScreen;
     [SerializeField] private GameObject player;
     [SerializeField] private ScoreManager scoreManager;
+    // [SerializeField] private GameObject endButton;
 
     [Header("PowerUp Data")]
     [SerializeField] private float sprintMultiplier = .2f;
@@ -70,6 +72,11 @@ public class ShopManager : MonoBehaviour
         UpdateMoneyUI();  // Inisialisasi tampilan uang di UI
 
         UpdatePowerUpButtons();
+        
+        // if (endButton != null)
+        // {
+        //     endButton.GetComponent<Button>().onClick.AddListener(OnEndButtonPressed);
+        // }
     }
 
     private void Update()
@@ -100,6 +107,23 @@ public class ShopManager : MonoBehaviour
         selectBudgetBoosterButton.SetActive(isBudgetBoosterPurchased);
         selectTimeExtensionButton.SetActive(isTimeExtensionPurchased);
     }
+
+    // public void OnEndButtonPressed()
+    // {
+    //     // Hentikan timer
+    //     currentTime = 0;
+    //     UpdateTimerUI();
+
+    //     // Tampilkan UI GameOver, pindahkan player, dan jalankan fade
+    //     if (fadeScreen != null)
+    //     {
+    //         StartCoroutine(GameOverSequence());
+    //     }
+    //     else
+    //     {
+    //         TriggerGameOver();
+    //     }
+    // }
 
     private void HandleTimeOut()
     {

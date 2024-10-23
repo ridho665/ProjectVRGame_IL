@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TempatTidurModern
   m_EditorClassIdentifier: 
   itemName: TempatTidurModern
-  itemPrefab: {fileID: 6264875452807978716, guid: 78eb665bd481bf448b247d6a1c3a7446,
+  itemPrefab: {fileID: 901258728574358895, guid: ec88f6ad0122269498ddfe164d165254,
     type: 3}
   price: 150
   category: Furniture

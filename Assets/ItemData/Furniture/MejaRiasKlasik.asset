@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MejaRiasKlasik
   m_EditorClassIdentifier: 
   itemName: MejaRiasKlasik
-  itemPrefab: {fileID: 6264875452807978716, guid: 78eb665bd481bf448b247d6a1c3a7446,
+  itemPrefab: {fileID: 408546341824944219, guid: fd1b5743f1314754bb7ce0e4af2d96c8,
     type: 3}
   price: 125
   category: Furniture

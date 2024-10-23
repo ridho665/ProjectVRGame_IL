@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Work Room.unity
     guid: 34da1315feef04e4f98c4346ead2dfa5
   - enabled: 1
-    path: Assets/Scenes/Dining Room.unity
+    path: Assets/Scenes/Bed Room.unity
     guid: e34c1258e1414bd438d6c46ab344a671
   - enabled: 1
     path: Assets/Scenes/LoseScene.unity

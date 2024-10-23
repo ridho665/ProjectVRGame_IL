@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TempatTidurKlasik
   m_EditorClassIdentifier: 
   itemName: TempatTidurKlasik
-  itemPrefab: {fileID: 6264875452807978716, guid: 78eb665bd481bf448b247d6a1c3a7446,
+  itemPrefab: {fileID: 7535005273148420724, guid: 5db1e54249328fa41ba4c70de8e4c7b6,
     type: 3}
   price: 25
   category: Furniture

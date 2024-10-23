@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MejaRiasModern
   m_EditorClassIdentifier: 
   itemName: MejaRiasModern
-  itemPrefab: {fileID: 6264875452807978716, guid: 78eb665bd481bf448b247d6a1c3a7446,
+  itemPrefab: {fileID: 4416358185238812650, guid: 5a8b617056f4d844381ac27a6f884578,
     type: 3}
   price: 25
   category: Furniture
