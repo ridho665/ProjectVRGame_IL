@@ -71,7 +71,8 @@ public class ScoreUIManager : MonoBehaviour
         int money = scoreManager.GetMoney();
         if (moneyText != null)
         {
-            moneyText.text = $"Reward    : $ {money}";
+            moneyText.text = $"{money}";
+            // moneyText.text = $"Reward    : $ {money}";
         }
     }
 

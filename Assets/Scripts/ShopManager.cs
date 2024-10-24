@@ -449,7 +449,7 @@ public class ShopManager : MonoBehaviour
     {
         if (budgetText != null)
         {
-            budgetText.text = $"Budget: $ {playerBudget:N0}"; // Tampilkan budget sebagai angka tanpa simbol mata uang
+            budgetText.text = $"{playerBudget:N0}"; // Tampilkan budget sebagai angka tanpa simbol mata uang
         }
     }
 
@@ -467,7 +467,7 @@ public class ShopManager : MonoBehaviour
     {
         if (moneyText != null && scoreManager != null)
         {
-            moneyText.text = $"Money    : $ {playerMoney:N0}"; // Update uang yang ada di UI
+            moneyText.text = $"{playerMoney:N0}"; // Update uang yang ada di UI
         }
     }
 
