@@ -35,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 7984575799050083524}
   - {fileID: 2278579454788330753}
-  - {fileID: 5048028506119070832}
+  - {fileID: 3061860828681251043}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &22471045931077519
@@ -50,9 +50,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973b08831c9bf2a4c9161dfb908b6a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 1048022598895078048}
+  objectToDestroy: {fileID: 7131601869344228915}
   vfxObject: {fileID: 723727453165189749}
   furnitureObject: {fileID: 3724038283497295908}
+  objectCollider: {fileID: 191636063243198175}
+  objectRigidbody: {fileID: 798728929728129451}
   delayBetweenVFXAndFurniture: 0.5
 --- !u!65 &191636063243198175
 BoxCollider:
@@ -152,6 +154,9 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 22471045931077519}
         m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
@@ -165,9 +170,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -446,7 +448,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 743486195742719681}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -506,7 +520,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -702,15 +716,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56e76da5ad886447ba9219223854d5f, type: 3}
---- !u!1 &1048022598895078048 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027950082193762922, guid: c56e76da5ad886447ba9219223854d5f,
+--- !u!4 &3061860828681251043 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6098395016451769530, guid: c56e76da5ad886447ba9219223854d5f,
     type: 3}
   m_PrefabInstance: {fileID: 9141238275235933273}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5048028506119070832 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6098395016451769530, guid: c56e76da5ad886447ba9219223854d5f,
+--- !u!1 &7131601869344228915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2027950082193762922, guid: c56e76da5ad886447ba9219223854d5f,
     type: 3}
   m_PrefabInstance: {fileID: 9141238275235933273}
   m_PrefabAsset: {fileID: 0}

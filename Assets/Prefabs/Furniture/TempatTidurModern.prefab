@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4071251747049397308}
   - component: {fileID: 4502664678413211057}
   - component: {fileID: 8994779140390882530}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: TempatTidurModern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,6 +53,8 @@ MonoBehaviour:
   objectToDestroy: {fileID: 4140172204265573423}
   vfxObject: {fileID: 8314665196461729488}
   furnitureObject: {fileID: 1852059817799951534}
+  objectCollider: {fileID: 4071251747049397308}
+  objectRigidbody: {fileID: 4502664678413211057}
   delayBetweenVFXAndFurniture: 0.5
 --- !u!65 &4071251747049397308
 BoxCollider:
@@ -152,6 +154,9 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1156763182153135099}
         m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
@@ -165,9 +170,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -530,7 +532,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1

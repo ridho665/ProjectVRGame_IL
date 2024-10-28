@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 1514183301767452485}
   - component: {fileID: 2874389103046680998}
   - component: {fileID: 8645123239724897037}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SofaModern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,6 +338,8 @@ MonoBehaviour:
   objectToDestroy: {fileID: 7045006722076570734}
   vfxObject: {fileID: 6735677978336112077}
   furnitureObject: {fileID: 3517530781291180219}
+  objectCollider: {fileID: 1514183301767452485}
+  objectRigidbody: {fileID: 2874389103046680998}
   delayBetweenVFXAndFurniture: 0.5
 --- !u!65 &1514183301767452485
 BoxCollider:
@@ -437,6 +439,9 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2312268376840100375}
         m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
@@ -450,9 +455,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []

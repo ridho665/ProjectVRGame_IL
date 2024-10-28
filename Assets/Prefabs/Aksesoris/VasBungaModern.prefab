@@ -247,7 +247,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -320,7 +320,7 @@ Transform:
   m_Children:
   - {fileID: 7866347978902665587}
   - {fileID: 4454121163245593266}
-  - {fileID: 7224098459041735619}
+  - {fileID: 5387227754046569044}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6171996686114198279
@@ -335,9 +335,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973b08831c9bf2a4c9161dfb908b6a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 3225781745263430931}
+  objectToDestroy: {fileID: 163861555718313092}
   vfxObject: {fileID: 2901485981146234310}
   furnitureObject: {fileID: 571835220674608313}
+  objectCollider: {fileID: 7787604776392828864}
+  objectRigidbody: {fileID: 8235919273782746433}
   delayBetweenVFXAndFurniture: 0.5
 --- !u!65 &7787604776392828864
 BoxCollider:
@@ -437,6 +439,9 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6171996686114198279}
         m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
@@ -450,9 +455,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -615,13 +617,13 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56e76da5ad886447ba9219223854d5f, type: 3}
---- !u!1 &3225781745263430931 stripped
+--- !u!1 &163861555718313092 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2027950082193762922, guid: c56e76da5ad886447ba9219223854d5f,
     type: 3}
   m_PrefabInstance: {fileID: 2189487112075411182}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7224098459041735619 stripped
+--- !u!4 &5387227754046569044 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6098395016451769530, guid: c56e76da5ad886447ba9219223854d5f,
     type: 3}

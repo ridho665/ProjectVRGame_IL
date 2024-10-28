@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BingkaiFotoKlasik
   m_EditorClassIdentifier: 
   itemName: BingkaiFotoKlasik
-  itemPrefab: {fileID: 2694946230534065053, guid: 184025b0b1d332c4db8122de5dd6c499,
+  itemPrefab: {fileID: 292381277525342113, guid: 181c54128e0ec1b4a94d3dcd0c6e1848,
     type: 3}
   price: 35
   category: Accessories

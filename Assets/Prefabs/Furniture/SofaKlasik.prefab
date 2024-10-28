@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 591733169698340698}
   - component: {fileID: 5218385935811152705}
   - component: {fileID: 9148524710162457579}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: SofaKlasik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,6 +53,8 @@ MonoBehaviour:
   objectToDestroy: {fileID: 7148066016427211808}
   vfxObject: {fileID: 7555141767270292743}
   furnitureObject: {fileID: 7183081665543823173}
+  objectCollider: {fileID: 591733169698340698}
+  objectRigidbody: {fileID: 5218385935811152705}
   delayBetweenVFXAndFurniture: 0.5
 --- !u!65 &591733169698340698
 BoxCollider:
@@ -152,6 +154,9 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4538196721970283009}
         m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
@@ -165,9 +170,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []

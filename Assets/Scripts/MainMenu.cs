@@ -34,6 +34,14 @@ public class MainMenu : MonoBehaviour
     StartCoroutine(EnterLeaveGameplayModeWithFade());
     }
 
+    public void PlayButtonSound()
+    {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.PlaySFX(0);
+        }
+    }
+
     public void Quit()
     {
         Application.Quit();

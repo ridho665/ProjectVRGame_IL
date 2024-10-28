@@ -246,7 +246,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 8461800987190197361}
   - component: {fileID: 5255517475705291787}
   - component: {fileID: 2158679300191660633}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: KursiKlasik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,6 +337,8 @@ MonoBehaviour:
   objectToDestroy: {fileID: 2765977404832746124}
   vfxObject: {fileID: 6829026108427524153}
   furnitureObject: {fileID: 3224271176732289476}
+  objectCollider: {fileID: 8461800987190197361}
+  objectRigidbody: {fileID: 5255517475705291787}
   delayBetweenVFXAndFurniture: 0.5
 --- !u!65 &8461800987190197361
 BoxCollider:
@@ -436,6 +438,9 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2168040604147208603}
         m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
@@ -449,9 +454,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []

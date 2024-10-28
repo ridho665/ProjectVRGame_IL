@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PatungHiasModern
   m_EditorClassIdentifier: 
   itemName: PatungHiasModern
-  itemPrefab: {fileID: 2694946230534065053, guid: 184025b0b1d332c4db8122de5dd6c499,
+  itemPrefab: {fileID: 4518339903931260577, guid: 2e8c3c11a9205084b80e34b2a3115fce,
     type: 3}
   price: 125
   category: Accessories

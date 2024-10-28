@@ -7,6 +7,8 @@ public class DestoryGameObject : MonoBehaviour
     public GameObject vfxObject;        // Objek VFX yang akan diaktifkan setelah penghancuran
     public GameObject furnitureObject;  // Objek Furniture yang akan diaktifkan setelah VFX
 
+    public Collider objectCollider;     // Collider dari objectToDestroy yang akan dinonaktifkan
+    public Rigidbody objectRigidbody; 
     // public float delayAfterDestroy = 0.5f; // Penundaan setelah menghancurkan objectToDestroy
     public float delayBetweenVFXAndFurniture = 0.5f; // Penundaan antara aktivasi VFX dan Furniture
 
@@ -30,6 +32,19 @@ public class DestoryGameObject : MonoBehaviour
         // Hancurkan objek awal terlebih dahulu
         if (objectToDestroy != null)
         {
+            if (objectCollider != null)
+            {
+                objectCollider.enabled = false;
+                Debug.Log("BoxCollider telah dinonaktifkan.");
+            }
+
+            // Set Rigidbody menjadi isKinematic
+            if (objectRigidbody != null)
+            {
+                objectRigidbody.isKinematic = false;
+                Debug.Log("Rigidbody diubah menjadi isKinematic.");
+            }
+
             Destroy(objectToDestroy);
             Debug.Log("Object awal telah dihancurkan.");
         }

@@ -223,7 +223,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -335,6 +335,8 @@ MonoBehaviour:
   objectToDestroy: {fileID: 5399116173737033298}
   vfxObject: {fileID: 6269663349473125668}
   furnitureObject: {fileID: 4415981429586733752}
+  objectCollider: {fileID: 4812925951764850034}
+  objectRigidbody: {fileID: 7328029758032638640}
   delayBetweenVFXAndFurniture: 0.5
 --- !u!65 &4812925951764850034
 BoxCollider:
@@ -434,6 +436,9 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6341074358702008922}
         m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
@@ -447,9 +452,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []

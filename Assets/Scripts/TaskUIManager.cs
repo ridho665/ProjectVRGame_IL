@@ -34,7 +34,7 @@ public class TaskUIManager : MonoBehaviour
             budgetText.text = "Budget 	    : " + taskManager.currentTask.budget.ToString("C0"); // Format sebagai mata uang
             styleText.text = "Style 	    : " + taskManager.currentTask.style;
             roomText.text = "Room 	    : " + taskManager.currentTask.room;
-            timeText.text = "Time             : " + FormatTime(taskManager.currentTask.time);
+            timeText.text = "Time              : " + FormatTime(taskManager.currentTask.time);
         }
     }
 

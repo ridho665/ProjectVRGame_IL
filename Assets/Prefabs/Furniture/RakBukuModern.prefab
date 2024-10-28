@@ -4899,7 +4899,7 @@ GameObject:
   - component: {fileID: 2979297057156832974}
   - component: {fileID: 3285208870299206281}
   - component: {fileID: 2497239397625120244}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: RakBukuModern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4939,6 +4939,8 @@ MonoBehaviour:
   objectToDestroy: {fileID: 5892731409636495234}
   vfxObject: {fileID: 6154635099911260098}
   furnitureObject: {fileID: 7772078921921294089}
+  objectCollider: {fileID: 2979297057156832974}
+  objectRigidbody: {fileID: 3285208870299206281}
   delayBetweenVFXAndFurniture: 0.5
 --- !u!65 &2979297057156832974
 BoxCollider:
@@ -5038,6 +5040,9 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1917142955374375025}
         m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
@@ -5051,9 +5056,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5392,7 +5394,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1

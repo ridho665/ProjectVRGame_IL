@@ -35,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 7953161357946685610}
   - {fileID: 8166303298769761007}
-  - {fileID: 2937922875088778142}
+  - {fileID: 7681848657652147321}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3535713005120405968
@@ -50,9 +50,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973b08831c9bf2a4c9161dfb908b6a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToDestroy: {fileID: 6935817634106957134}
+  objectToDestroy: {fileID: 2458411832861657769}
   vfxObject: {fileID: 7259969916222516635}
   furnitureObject: {fileID: 4988544822012249515}
+  objectCollider: {fileID: 2669030336088338981}
+  objectRigidbody: {fileID: 5785518235234698444}
   delayBetweenVFXAndFurniture: 0.5
 --- !u!65 &2669030336088338981
 BoxCollider:
@@ -152,6 +154,9 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3535713005120405968}
         m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
@@ -165,9 +170,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -486,7 +488,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -613,15 +615,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c56e76da5ad886447ba9219223854d5f, type: 3}
---- !u!4 &2937922875088778142 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6098395016451769530, guid: c56e76da5ad886447ba9219223854d5f,
+--- !u!1 &2458411832861657769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2027950082193762922, guid: c56e76da5ad886447ba9219223854d5f,
     type: 3}
   m_PrefabInstance: {fileID: 4484091351292715203}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6935817634106957134 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2027950082193762922, guid: c56e76da5ad886447ba9219223854d5f,
+--- !u!4 &7681848657652147321 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6098395016451769530, guid: c56e76da5ad886447ba9219223854d5f,
     type: 3}
   m_PrefabInstance: {fileID: 4484091351292715203}
   m_PrefabAsset: {fileID: 0}

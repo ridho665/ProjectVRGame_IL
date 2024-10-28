@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CerminKlasik
   m_EditorClassIdentifier: 
   itemName: CerminKlasik
-  itemPrefab: {fileID: 2694946230534065053, guid: 184025b0b1d332c4db8122de5dd6c499,
+  itemPrefab: {fileID: 1749930387522350289, guid: 25ad6cb60591cf444b6abe32593ca35d,
     type: 3}
   price: 15
   category: Accessories
