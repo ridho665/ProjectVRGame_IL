@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 518088497528267622}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.03, y: -1.051, z: -6.5803633}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalPosition: {x: 0.016, y: -0.9131, z: -5.253}
+  m_LocalScale: {x: 80, y: 88.19, z: 88.19}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4754296591615944117}
@@ -112,7 +112,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 0
 --- !u!114 &2102044297735667695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +163,9 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7521700091853466730}
         m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
@@ -176,9 +179,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
+      - m_Target: {fileID: 7521700091853466730}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []

@@ -33,7 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2550967971225803973}
+  - {fileID: 6778477450425608320}
   - {fileID: 766339469553844717}
   - {fileID: 3807836069894434723}
   m_Father: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDestroy: {fileID: 8961396439637213555}
   vfxObject: {fileID: 8886558071263450919}
-  furnitureObject: {fileID: 6990778101127489748}
+  furnitureObject: {fileID: 8104147534121023043}
   objectCollider: {fileID: 2356542349617245569}
   objectRigidbody: {fileID: 6016849286883048232}
   delayBetweenVFXAndFurniture: 0.5
@@ -275,16 +275,13 @@ GameObject:
   - component: {fileID: 2550967971225803973}
   - component: {fileID: 2449667884129495926}
   - component: {fileID: 2433148526011901152}
-  - component: {fileID: 7348467562774111179}
-  - component: {fileID: 4004703320603999377}
-  - component: {fileID: 4986575290415639467}
   m_Layer: 3
-  m_Name: classic table
+  m_Name: Body
   m_TagString: MejaKlasik
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2550967971225803973
 Transform:
   m_ObjectHideFlags: 0
@@ -293,13 +290,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6990778101127489748}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -3.271, y: -0.34, z: 4.323}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -2.98, y: -0.22, z: 4.42}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8220619097413302526}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 6778477450425608320}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &2449667884129495926
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -350,13 +347,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7348467562774111179
+--- !u!1 &8104147534121023043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6778477450425608320}
+  - component: {fileID: 612003111470399117}
+  - component: {fileID: 984101448891157690}
+  - component: {fileID: 4481771413349934599}
+  m_Layer: 3
+  m_Name: classic table (1)
+  m_TagString: MejaKlasik
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6778477450425608320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8104147534121023043}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2550967971225803973}
+  m_Father: {fileID: 8220619097413302526}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &612003111470399117
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6990778101127489748}
+  m_GameObject: {fileID: 8104147534121023043}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -369,15 +401,15 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.007508341, y: 0.016279079, z: 0.005436112}
-  m_Center: {x: 0.032244094, y: 0.043489292, z: 0.006617285}
---- !u!54 &4004703320603999377
+  m_Size: {x: 0.75572455, y: 0.5585927, z: 1.6452241}
+  m_Center: {x: 0.24209715, y: 0.43875575, z: 0.06298447}
+--- !u!54 &984101448891157690
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6990778101127489748}
+  m_GameObject: {fileID: 8104147534121023043}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -397,14 +429,14 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
---- !u!114 &4986575290415639467
+  m_CollisionDetection: 0
+--- !u!114 &4481771413349934599
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6990778101127489748}
+  m_GameObject: {fileID: 8104147534121023043}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -451,7 +483,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6016849286883048232}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []

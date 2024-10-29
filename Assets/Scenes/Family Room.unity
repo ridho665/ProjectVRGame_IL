@@ -752,7 +752,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 29909509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1200,7 +1200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 121023041}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1422,7 +1422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 141381351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1744,7 +1744,7 @@ GameObject:
   - component: {fileID: 179558145}
   - component: {fileID: 179558147}
   - component: {fileID: 179558146}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2034,7 +2034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 221063545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2149,7 +2149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 225665147}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2656,7 +2656,7 @@ GameObject:
   - component: {fileID: 328351652}
   - component: {fileID: 328351654}
   - component: {fileID: 328351653}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2972,7 +2972,7 @@ GameObject:
   - component: {fileID: 388931628}
   - component: {fileID: 388931630}
   - component: {fileID: 388931629}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3438,7 +3438,7 @@ GameObject:
   - component: {fileID: 426556676}
   - component: {fileID: 426556678}
   - component: {fileID: 426556677}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4038,7 +4038,7 @@ GameObject:
   - component: {fileID: 474926222}
   - component: {fileID: 474926224}
   - component: {fileID: 474926223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4855,7 +4855,7 @@ GameObject:
   - component: {fileID: 540597385}
   - component: {fileID: 540597387}
   - component: {fileID: 540597386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5203,7 +5203,7 @@ GameObject:
   - component: {fileID: 573818127}
   - component: {fileID: 573818129}
   - component: {fileID: 573818128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5368,7 +5368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 584421388}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5608,7 +5608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 712473454}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5915,7 +5915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 745032844}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5949,7 +5949,7 @@ GameObject:
   - component: {fileID: 777755319}
   - component: {fileID: 777755321}
   - component: {fileID: 777755320}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6366,7 +6366,7 @@ GameObject:
   - component: {fileID: 818165463}
   - component: {fileID: 818165465}
   - component: {fileID: 818165464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6583,7 +6583,7 @@ GameObject:
   - component: {fileID: 863778105}
   - component: {fileID: 863778107}
   - component: {fileID: 863778106}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7183,7 +7183,7 @@ GameObject:
   - component: {fileID: 922038234}
   - component: {fileID: 922038236}
   - component: {fileID: 922038235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8017,6 +8017,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 772040377585919801, guid: a6de387cbf66a38409175dbdb4f5da17,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5641030716367402369, guid: a6de387cbf66a38409175dbdb4f5da17,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8838415914022800764, guid: a6de387cbf66a38409175dbdb4f5da17,
         type: 3}
       propertyPath: m_Name
@@ -8060,7 +8070,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 985370882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8092,7 +8102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 990970778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8124,7 +8134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1003720655}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ipad_pro1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8993,7 +9003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1141476764}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9161,7 +9171,7 @@ GameObject:
   - component: {fileID: 1174137410}
   - component: {fileID: 1174137412}
   - component: {fileID: 1174137411}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13381,7 +13391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1367910296}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13413,7 +13423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371076083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13429,7 +13439,7 @@ Transform:
   m_GameObject: {fileID: 1371076082}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13621,7 +13631,7 @@ MonoBehaviour:
   m_Camera: {fileID: 1242200341}
   m_OriginBaseGameObject: {fileID: 1377480104}
   m_CameraFloorOffsetObject: {fileID: 1085621258}
-  m_RequestedTrackingOriginMode: 2
+  m_RequestedTrackingOriginMode: 1
   m_CameraYOffset: 1.36144
 --- !u!143 &1377480112
 CharacterController:
@@ -14989,7 +14999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1512814169}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16724,7 +16734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1775546938}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17670,7 +17680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1910498892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18069,7 +18079,7 @@ GameObject:
   - component: {fileID: 1941120713}
   - component: {fileID: 1941120712}
   - component: {fileID: 1941120711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18454,7 +18464,7 @@ GameObject:
   - component: {fileID: 1991420182}
   - component: {fileID: 1991420184}
   - component: {fileID: 1991420183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InventoryBodyIpad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19383,7 +19393,7 @@ GameObject:
   - component: {fileID: 2100319132}
   - component: {fileID: 2100319134}
   - component: {fileID: 2100319133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19467,7 +19477,7 @@ GameObject:
   - component: {fileID: 2106310127}
   - component: {fileID: 2106310129}
   - component: {fileID: 2106310128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mesh13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19548,7 +19558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112762304}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
