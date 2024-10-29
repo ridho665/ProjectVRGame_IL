@@ -4112,7 +4112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 572511370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AreaScoreObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7791,7 +7791,7 @@ GameObject:
   - component: {fileID: 1082591171}
   - component: {fileID: 1082591173}
   - component: {fileID: 1082591172}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AreaFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
