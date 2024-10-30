@@ -1201,6 +1201,7 @@ MonoBehaviour:
   player: {fileID: 0}
   spawn1: {fileID: 0}
   spawn2: {fileID: 0}
+  tutorialUI: {fileID: 0}
   shopManager: {fileID: 0}
   scoreManager: {fileID: 0}
   playerBudget: 0
