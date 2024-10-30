@@ -170,6 +170,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6818402761008229006}
+        m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
+        m_MethodName: PlaySoundBox
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5959559582051829290}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -294,7 +318,7 @@ Transform:
   m_GameObject: {fileID: 8351342103025221649}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.045, z: 0}
+  m_LocalPosition: {x: 0, y: 0.29, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -556,8 +580,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.023873985, y: 0.038436387, z: 0.00049225194}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.023873985, y: 0.038436387, z: 0.0049449573}
+  m_Center: {x: 0, y: 2.513961e-19, z: 0.0022264372}
 --- !u!1001 &5334290136952970502
 PrefabInstance:
   m_ObjectHideFlags: 0

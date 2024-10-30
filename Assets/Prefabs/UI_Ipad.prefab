@@ -214,6 +214,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &30127951945688987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,7 +1046,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 70, y: 30}
+  m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1447179525137759823
 CanvasRenderer:
@@ -1064,7 +1076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db7344e7a9d53b04286d821b021da632, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3c7ebb886328ccd4b8c9605546fe38db, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1822,6 +1834,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &306549332991813817
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,6 +2060,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &341433153312991492
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,7 +2107,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 70, y: 30}
+  m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7682082805330191042
 CanvasRenderer:
@@ -2101,7 +2137,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db7344e7a9d53b04286d821b021da632, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 298137711ff87e841a1dcb9e34fa1ec6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2405,6 +2441,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 3120b19a8131cd24d8a2b51170dd7acf,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2911,10 +2959,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: BuyPowerUp
-        m_Mode: 5
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3479,6 +3527,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 7208676849951141695}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -4063,10 +4123,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: BuyPowerUp
-        m_Mode: 5
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4204,6 +4264,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: a6ba11672c0132046a70235e30106cb6,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4999,7 +5071,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chair
+  m_text: Statue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c5aed41d00559f4889cf9554700f38c, type: 2}
   m_sharedMaterial: {fileID: 1761903542772292808, guid: 1c5aed41d00559f4889cf9554700f38c,
@@ -5968,6 +6040,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1487913019281641495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6520,6 +6604,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1632504871007643915
 GameObject:
   m_ObjectHideFlags: 0
@@ -6784,6 +6880,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: f63328f7659898a4dbf1a58c3ac6d5cc,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8209,6 +8317,18 @@ MonoBehaviour:
           m_StringArgument: Sprint
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2146392896495677063
 GameObject:
   m_ObjectHideFlags: 0
@@ -8809,6 +8929,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2895323131948016015}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -9423,10 +9555,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: BuyPowerUp
-        m_Mode: 5
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10199,6 +10331,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2576037148253424984
 GameObject:
   m_ObjectHideFlags: 0
@@ -10618,6 +10762,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2644439458067675697
 GameObject:
   m_ObjectHideFlags: 0
@@ -10752,6 +10908,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2648181933246911210
 GameObject:
   m_ObjectHideFlags: 0
@@ -10881,6 +11049,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 1e7d669c3f29b824c8b789319ab65147,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11092,6 +11272,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: TimeExtension
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2709233078477717447
@@ -11681,6 +11873,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12746,6 +12950,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3092181549314837241
 GameObject:
   m_ObjectHideFlags: 0
@@ -13008,6 +13224,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 10e4f1f5bc49d3146ad0b3c98aed00b3,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -13718,6 +13946,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 4e0bd98334d533548bb4f944c6a2780c,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -14877,6 +15117,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3424655556078428169
 GameObject:
   m_ObjectHideFlags: 0
@@ -15141,6 +15393,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 7b5b544fb6faae44c8b1abe7edee43c5,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -15930,6 +16194,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3658723253021073993
 GameObject:
   m_ObjectHideFlags: 0
@@ -16577,7 +16853,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 70, y: 30}
+  m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8521198060576769565
 CanvasRenderer:
@@ -16607,7 +16883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db7344e7a9d53b04286d821b021da632, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b930a0cfe4a83541a91cf6c2bb5b820, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17231,6 +17507,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3909994144640799120
 GameObject:
   m_ObjectHideFlags: 0
@@ -17710,6 +17998,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4049747307111710281
 GameObject:
   m_ObjectHideFlags: 0
@@ -18114,6 +18414,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4235069730586134598
 GameObject:
   m_ObjectHideFlags: 0
@@ -18485,6 +18797,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: de9b11248cf61964c948248c817036da,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -20580,6 +20904,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4648558023754113866
 GameObject:
   m_ObjectHideFlags: 0
@@ -21537,6 +21873,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5006605329877348103
 GameObject:
   m_ObjectHideFlags: 0
@@ -22011,6 +22359,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 18ada3710d57e55499b6550643dd47dc,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -22838,6 +23198,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5240643496837677492
 GameObject:
   m_ObjectHideFlags: 0
@@ -23038,7 +23410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chair
+  m_text: Statue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c5aed41d00559f4889cf9554700f38c, type: 2}
   m_sharedMaterial: {fileID: 1761903542772292808, guid: 1c5aed41d00559f4889cf9554700f38c,
@@ -24483,6 +24855,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5682891926946376505
 GameObject:
   m_ObjectHideFlags: 0
@@ -24994,6 +25378,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: BudgetBooster
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5817761961301015273
@@ -26435,7 +26831,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chair
+  m_text: Vases
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c5aed41d00559f4889cf9554700f38c, type: 2}
   m_sharedMaterial: {fileID: 1761903542772292808, guid: 1c5aed41d00559f4889cf9554700f38c,
@@ -26909,6 +27305,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6368896263231867851
 GameObject:
   m_ObjectHideFlags: 0
@@ -27075,6 +27483,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: bc20a8436aed74646981198b3a28dc3d,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -27957,8 +28377,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1017061439449656852}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.487118}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -29005,6 +29425,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6868763733123798438
 GameObject:
   m_ObjectHideFlags: 0
@@ -29690,7 +30122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chair
+  m_text: Vases
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c5aed41d00559f4889cf9554700f38c, type: 2}
   m_sharedMaterial: {fileID: 1761903542772292808, guid: 1c5aed41d00559f4889cf9554700f38c,
@@ -29825,7 +30257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chair
+  m_text: Curtain
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c5aed41d00559f4889cf9554700f38c, type: 2}
   m_sharedMaterial: {fileID: 1761903542772292808, guid: 1c5aed41d00559f4889cf9554700f38c,
@@ -30197,7 +30629,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
@@ -32416,6 +32848,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7626001347498946413
 GameObject:
   m_ObjectHideFlags: 0
@@ -33123,6 +33567,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 5d04d03af9ee85c48ad8ed793a8ad026,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -34287,6 +34743,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7993530308632905725
 GameObject:
   m_ObjectHideFlags: 0
@@ -34628,6 +35096,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 7208676849951141695}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -35086,7 +35566,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7782988866110972869}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
+        m_MethodName: OnSceneChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8185364205929876852
 GameObject:
   m_ObjectHideFlags: 0
@@ -35216,6 +35720,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: d2dadb915004a504b8fb924cd46b8af9,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -36895,6 +37411,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8535097366161852386
 GameObject:
   m_ObjectHideFlags: 0
@@ -37772,8 +38300,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2247092828416110768}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.000000059604645, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -38478,6 +39006,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8867819061981874339
 GameObject:
   m_ObjectHideFlags: 0
@@ -38838,7 +39378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chair
+  m_text: Curtain
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c5aed41d00559f4889cf9554700f38c, type: 2}
   m_sharedMaterial: {fileID: 1761903542772292808, guid: 1c5aed41d00559f4889cf9554700f38c,
@@ -40082,6 +40622,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 1d5b388c52fa6a64fa378ffe591b98c5,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ItemData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8304661471096407291}
+        m_TargetAssemblyTypeName: FinishControll, Assembly-CSharp
+        m_MethodName: PlaySoundBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

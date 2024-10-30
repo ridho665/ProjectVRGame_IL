@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2761424979914888199}
   - component: {fileID: 4439453914635672877}
   - component: {fileID: 6347890234386717729}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: KomputerKlasik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,6 +169,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4135162438784400770}
+        m_TargetAssemblyTypeName: DestoryGameObject, Assembly-CSharp
+        m_MethodName: PlaySoundBox
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4439453914635672877}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:

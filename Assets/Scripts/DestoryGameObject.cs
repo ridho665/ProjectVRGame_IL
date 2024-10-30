@@ -71,6 +71,14 @@ public class DestoryGameObject : MonoBehaviour
         }
     }
 
+    public void PlaySoundBox()
+    {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.PlaySFX(2);
+        }
+    }
+
     // public void OnDestroy() 
     // {
     //     Destroy(gameObject);

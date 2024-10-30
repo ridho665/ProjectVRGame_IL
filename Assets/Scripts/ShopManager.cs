@@ -28,6 +28,7 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private GameObject UI_Gameover;
     [SerializeField] private FadeScreen fadeScreen;
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject tablet;
     [SerializeField] private ScoreManager scoreManager;
     // [SerializeField] private GameObject endButton;
 
@@ -128,6 +129,17 @@ public class ShopManager : MonoBehaviour
     private void HandleTimeOut()
     {
         Debug.Log("Task time has run out!");
+
+        if (moveProvider != null)
+        {
+            moveProvider.enabled = false; // Menonaktifkan moveProvider untuk menghentikan gerakan
+        }
+
+        if (tablet != null)
+        {
+            tablet.SetActive(false); // Menonaktifkan iPad saat waktu habis
+            Debug.Log("iPad has been deactivated.");
+        }
 
         if (scoreManager != null)
         {

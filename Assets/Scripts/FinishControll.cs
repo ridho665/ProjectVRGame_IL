@@ -63,4 +63,12 @@ public class FinishControll : MonoBehaviour
             AudioManager.instance.PlaySFX(0);
         }
     }
+
+    public void PlaySoundBuy()
+    {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.PlaySFX(1);
+        }
+    }
 }

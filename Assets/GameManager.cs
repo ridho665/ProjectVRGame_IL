@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [Header("Spawn Points")]
     public GameObject spawn1;
     public GameObject spawn2;
+    public GameObject tutorialUI;
 
     [Header("References")]
     public ShopManager shopManager;
@@ -63,6 +64,7 @@ public class GameManager : MonoBehaviour
 
         spawn1 = GameObject.Find("SpawnNewGame"); // Pastikan Player1 memiliki tag "Player1"
         spawn2 = GameObject.Find("SpawnContinue");
+        tutorialUI = GameObject.Find("UI_Tutorial");
         player = GameObject.Find("Player");
 
 
@@ -199,6 +201,12 @@ public class GameManager : MonoBehaviour
                 player.transform.rotation = spawn1.transform.rotation;
                 Debug.Log("Player moved to spawn1 (New Game).");
             }
+
+            if (tutorialUI != null)
+            {
+                tutorialUI.SetActive(true); // Aktifkan tutorial saat New Game
+                Debug.Log("Tutorial UI activated for New Game.");
+            }
         }
         else
         {
@@ -207,6 +215,12 @@ public class GameManager : MonoBehaviour
                 player.transform.position = spawn2.transform.position;
                 player.transform.rotation = spawn2.transform.rotation;
                 Debug.Log("Player moved to spawn2 (Continue Game).");
+            }
+
+            if (tutorialUI != null)
+            {
+                tutorialUI.SetActive(false); // Nonaktifkan tutorial saat Continue Game
+                Debug.Log("Tutorial UI deactivated for Continue Game.");
             }
         }
     }
