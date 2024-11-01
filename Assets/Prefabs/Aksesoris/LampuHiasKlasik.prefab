@@ -33,7 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6937572933817135621}
+  - {fileID: 2359491866077637604}
   - {fileID: 7954762591957287919}
   - {fileID: 6996931106413354705}
   m_Father: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDestroy: {fileID: 2999247728512004097}
   vfxObject: {fileID: 8930901770811251867}
-  furnitureObject: {fileID: 7210550267812667959}
+  furnitureObject: {fileID: 8814048573871638471}
   objectCollider: {fileID: 6680288674805041838}
   objectRigidbody: {fileID: 5589883807655925374}
   delayBetweenVFXAndFurniture: 0.5
@@ -299,16 +299,13 @@ GameObject:
   - component: {fileID: 6937572933817135621}
   - component: {fileID: 7442086178325351985}
   - component: {fileID: 6542639964849338259}
-  - component: {fileID: 2080153297023279549}
-  - component: {fileID: 750227430684861530}
-  - component: {fileID: 532868812852975955}
   m_Layer: 3
   m_Name: classic table lamp
   m_TagString: LampuHiasKlasik
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6937572933817135621
 Transform:
   m_ObjectHideFlags: 0
@@ -317,12 +314,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7210550267812667959}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.315, y: -0.967, z: 3.908}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 14.768003, y: -5.024, z: 16.58}
+  m_LocalScale: {x: 399.99994, y: 400.00003, z: 400.00006}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4022787275296032842}
+  m_Father: {fileID: 2359491866077637604}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &7442086178325351985
 MeshFilter:
@@ -375,13 +372,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2080153297023279549
+--- !u!1 &8814048573871638471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2359491866077637604}
+  - component: {fileID: 3102180230555485346}
+  - component: {fileID: 1972568139698619585}
+  - component: {fileID: 6913564145469783165}
+  m_Layer: 3
+  m_Name: classic table lamp_1
+  m_TagString: LampuHiasKlasik
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2359491866077637604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8814048573871638471}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.17, y: 0.289, z: 0.216}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6937572933817135621}
+  m_Father: {fileID: 4022787275296032842}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3102180230555485346
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7210550267812667959}
+  m_GameObject: {fileID: 8814048573871638471}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -394,15 +426,15 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0023645759, y: 0.0024010544, z: 0.0045973565}
-  m_Center: {x: 0.043246202, y: 0.03916094, z: 0.011618006}
---- !u!54 &750227430684861530
+  m_Size: {x: 0.97269464, y: 1.8655039, z: 0.80969363}
+  m_Center: {x: -0.88550377, y: -0.3678195, z: -0.7208142}
+--- !u!54 &1972568139698619585
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7210550267812667959}
+  m_GameObject: {fileID: 8814048573871638471}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -420,16 +452,16 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &532868812852975955
+--- !u!114 &6913564145469783165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7210550267812667959}
+  m_GameObject: {fileID: 8814048573871638471}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -439,7 +471,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
@@ -545,19 +577,19 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 0
-  m_SmoothPositionAmount: 5
-  m_TightenPosition: 0.5
+  m_SmoothPosition: 1
+  m_SmoothPositionAmount: 1.34
+  m_TightenPosition: 0.068
   m_TrackRotation: 1
-  m_SmoothRotation: 0
-  m_SmoothRotationAmount: 5
-  m_TightenRotation: 0.5
+  m_SmoothRotation: 1
+  m_SmoothRotationAmount: 1.57
+  m_TightenRotation: 0.077
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -595,6 +627,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027950082193762922, guid: c56e76da5ad886447ba9219223854d5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6098395016451769530, guid: c56e76da5ad886447ba9219223854d5f,
         type: 3}

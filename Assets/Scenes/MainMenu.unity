@@ -1901,6 +1901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  continueButton: {fileID: 0}
 --- !u!114 &332093072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9426,6 +9427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 163396305}
+  continueButton: {fileID: 0}
 --- !u!114 &1433702613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12287,6 +12289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 163396305}
+  continueButton: {fileID: 690189207}
 --- !u!114 &1918129714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12366,7 +12369,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 0
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -13023,6 +13026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  continueButton: {fileID: 0}
 --- !u!114 &2120126198
 MonoBehaviour:
   m_ObjectHideFlags: 0

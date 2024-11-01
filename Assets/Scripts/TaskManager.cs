@@ -92,6 +92,8 @@ public class TaskManager : MonoBehaviour
         // Setel waktu task ke ShopManager
         shopManager.SetTaskTime(currentTask.time);
 
+        shopManager.SetTaskDetails(currentTask.style, currentTask.room);
+
         // gameManager.ContinueGame();
 
         // Pindahkan player ke building mode (pindah scene sesuai dengan room)

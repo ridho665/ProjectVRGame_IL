@@ -15,12 +15,18 @@ public class ShopManager : MonoBehaviour
 
     [Header("UI Elements")]
     [SerializeField] private TextMeshProUGUI budgetText; // Referensi ke TextMeshPro untuk menampilkan budget di UI
-    [SerializeField] private TextMeshProUGUI timerText;  // Referensi ke TextMeshPro untuk menampilkan timer di UI
+    [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI styleText;
+    [SerializeField] private TextMeshProUGUI roomText;
     [SerializeField] private TextMeshProUGUI moneyText;  // Referensi ke TextMeshPro untuk menampilkan uang di UI
 
     private ItemData selectedItem;
     private float playerBudget;
+    // private string playerStyle;
     public int playerMoney;
+
+    private string currentStyle;  // Variabel untuk menyimpan style saat ini
+    private string currentRoom;   // Variabel untuk menyimpan room saat ini
 
 
     [Header("Gameplay Settings")]
@@ -189,9 +195,12 @@ public class ShopManager : MonoBehaviour
     // Membuka shop dan menampilkan item-item yang tersedia
     public void AddMoney(int moneyToAdd)
     {
-        scoreManager.SetMoney(scoreManager.GetMoney() + moneyToAdd); // Tambahkan uang ke skor ShopManager
-        UpdateMoneyUI(); // Update UI setelah menambahkan uang
-        Debug.Log($"Added {moneyToAdd} to shop. New total money: {scoreManager.GetMoney()}");
+        if (scoreManager != null)
+        {
+            scoreManager.SetMoney(scoreManager.GetMoney() + moneyToAdd);
+            UpdateMoneyUI();
+            Debug.Log($"Added {moneyToAdd} to shop. New total money: {scoreManager.GetMoney()}");
+        }
     }
     public void SetPlayerMoney(int money)
     {
@@ -453,6 +462,34 @@ public class ShopManager : MonoBehaviour
         else
         {
             Debug.Log("No more available spawn points.");
+        }
+    }
+
+    // private void UpdateStyleUI()
+    // {
+    //     if (styleText != null)
+    //     {
+    //         styleText.text = $"{playerStyle}";
+    //     }
+    // }
+
+    public void SetTaskDetails(string style, string room)
+    {
+        currentStyle = style;
+        currentRoom = room;
+        UpdateTaskDetails();
+    }
+
+    public void UpdateTaskDetails()
+    {
+        if (styleText != null)
+        {
+            styleText.text = "Style : " + currentStyle; // Tampilkan budget sebagai angka tanpa simbol mata uang
+        }
+
+        if (roomText != null)
+        {
+            roomText.text = currentRoom; // Tampilkan budget sebagai angka tanpa simbol mata uang
         }
     }
 

@@ -11,16 +11,13 @@ GameObject:
   - component: {fileID: 7866347978902665587}
   - component: {fileID: 7957870471222033772}
   - component: {fileID: 6713699918760639717}
-  - component: {fileID: 3473446637546793272}
-  - component: {fileID: 6285593971914607052}
-  - component: {fileID: 3951699799851004781}
   m_Layer: 3
   m_Name: modern vase
   m_TagString: VasBungaModern
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7866347978902665587
 Transform:
   m_ObjectHideFlags: 0
@@ -29,12 +26,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571835220674608313}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.431, y: -0.795, z: 4.036}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0.50000006, y: 0.49999997, z: 0.50000006, w: 0.49999997}
+  m_LocalPosition: {x: 15.280001, y: -4.336, z: -2.4040022}
+  m_LocalScale: {x: 399.99994, y: 399.99994, z: 400}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5905874481983470091}
+  m_Father: {fileID: 7894917891267226817}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7957870471222033772
 MeshFilter:
@@ -89,13 +86,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3473446637546793272
+--- !u!1 &1374404212737881872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7894917891267226817}
+  - component: {fileID: 3613583954830918677}
+  - component: {fileID: 8632988500051611281}
+  - component: {fileID: 2126938877980497706}
+  m_Layer: 3
+  m_Name: modern vase_1
+  m_TagString: VasBungaModern
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7894917891267226817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374404212737881872}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.17, y: 0.289, z: 0.216}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7866347978902665587}
+  m_Father: {fileID: 5905874481983470091}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3613583954830918677
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571835220674608313}
+  m_GameObject: {fileID: 1374404212737881872}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -108,15 +140,15 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0020034371, y: 0.0018281367, z: 0.0050694807}
-  m_Center: {x: -0.0042451257, y: 0.04015927, z: 0.012022154}
---- !u!54 &6285593971914607052
+  m_Size: {x: 0.7513954, y: 1.2009853, z: 0.7380714}
+  m_Center: {x: -0.7813098, y: 0.049395025, z: -0.71071774}
+--- !u!54 &8632988500051611281
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571835220674608313}
+  m_GameObject: {fileID: 1374404212737881872}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -134,16 +166,16 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3951699799851004781
+--- !u!114 &2126938877980497706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571835220674608313}
+  m_GameObject: {fileID: 1374404212737881872}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -153,7 +185,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
@@ -259,19 +291,19 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 0
-  m_SmoothPositionAmount: 5
-  m_TightenPosition: 0.5
+  m_SmoothPosition: 1
+  m_SmoothPositionAmount: 1.34
+  m_TightenPosition: 0.068
   m_TrackRotation: 1
-  m_SmoothRotation: 0
-  m_SmoothRotationAmount: 5
-  m_TightenRotation: 0.5
+  m_SmoothRotation: 1
+  m_SmoothRotationAmount: 1.57
+  m_TightenRotation: 0.077
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -330,7 +362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7866347978902665587}
+  - {fileID: 7894917891267226817}
   - {fileID: 4454121163245593266}
   - {fileID: 5387227754046569044}
   m_Father: {fileID: 0}
@@ -349,7 +381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDestroy: {fileID: 163861555718313092}
   vfxObject: {fileID: 2901485981146234310}
-  furnitureObject: {fileID: 571835220674608313}
+  furnitureObject: {fileID: 1374404212737881872}
   objectCollider: {fileID: 7787604776392828864}
   objectRigidbody: {fileID: 8235919273782746433}
   delayBetweenVFXAndFurniture: 0.5
@@ -597,6 +629,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027950082193762922, guid: c56e76da5ad886447ba9219223854d5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6098395016451769530, guid: c56e76da5ad886447ba9219223854d5f,
         type: 3}

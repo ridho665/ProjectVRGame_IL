@@ -33,7 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6280498409846793950}
+  - {fileID: 8559524247788890105}
   - {fileID: 9028961687649010291}
   - {fileID: 3149819362170606320}
   m_Father: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDestroy: {fileID: 7148066016427211808}
   vfxObject: {fileID: 7555141767270292743}
-  furnitureObject: {fileID: 7183081665543823173}
+  furnitureObject: {fileID: 7398165676078919943}
   objectCollider: {fileID: 591733169698340698}
   objectRigidbody: {fileID: 5218385935811152705}
   delayBetweenVFXAndFurniture: 0.5
@@ -299,16 +299,13 @@ GameObject:
   - component: {fileID: 6280498409846793950}
   - component: {fileID: 1702363885766692249}
   - component: {fileID: 564786712682142031}
-  - component: {fileID: 2979306320514717853}
-  - component: {fileID: 6447528034657086015}
-  - component: {fileID: 7749291275079818855}
   m_Layer: 3
   m_Name: classic sofa
   m_TagString: SofaKlasik
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6280498409846793950
 Transform:
   m_ObjectHideFlags: 0
@@ -317,12 +314,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7183081665543823173}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 6.065, y: -0.372, z: -2.696}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
+  m_LocalPosition: {x: -11.6480055, y: -2.644, z: -24.940002}
+  m_LocalScale: {x: 400.00003, y: 400.00003, z: 400.00006}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 170065792601483598}
+  m_Father: {fileID: 8559524247788890105}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180}
 --- !u!33 &1702363885766692249
 MeshFilter:
@@ -375,13 +372,51 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2979306320514717853
-MeshCollider:
+--- !u!1 &7398165676078919943
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7183081665543823173}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8559524247788890105}
+  - component: {fileID: 4710449152823820905}
+  - component: {fileID: 7876366924910324845}
+  - component: {fileID: 1895755108417534754}
+  - component: {fileID: 6249814537998926350}
+  - component: {fileID: 2064356548897644122}
+  - component: {fileID: 3758047246459605288}
+  m_Layer: 3
+  m_Name: classic sofa_1
+  m_TagString: SofaKlasik
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8559524247788890105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398165676078919943}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.17, y: 0.289, z: 0.216}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6280498409846793950}
+  m_Father: {fileID: 170065792601483598}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4710449152823820905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398165676078919943}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -393,17 +428,79 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7511891240067967398, guid: b3ee8272a5f309d49a074310d9cbf449, type: 3}
---- !u!54 &6447528034657086015
+  serializedVersion: 3
+  m_Size: {x: 8.286655, y: 2.24262, z: 2.974491}
+  m_Center: {x: -0.91687393, y: 0.043643534, z: -0.9149456}
+--- !u!65 &7876366924910324845
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398165676078919943}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.197258, y: 2.2564921, z: 0.22944039}
+  m_Center: {x: -0.88091564, y: 2.3143842, z: 0.46481466}
+--- !u!65 &1895755108417534754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398165676078919943}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.958678, y: 0.7721399, z: 2.8481956}
+  m_Center: {x: 3.321282, y: 1.6836307, z: -0.9240979}
+--- !u!65 &6249814537998926350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398165676078919943}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9746816, y: 0.89872885, z: 2.8735132}
+  m_Center: {x: -5.076208, y: 1.6456544, z: -0.93675697}
+--- !u!54 &2064356548897644122
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7183081665543823173}
+  m_GameObject: {fileID: 7398165676078919943}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -421,16 +518,16 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7749291275079818855
+--- !u!114 &3758047246459605288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7183081665543823173}
+  m_GameObject: {fileID: 7398165676078919943}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -440,7 +537,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
@@ -546,19 +643,19 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 0
-  m_SmoothPositionAmount: 5
-  m_TightenPosition: 0.5
+  m_SmoothPosition: 1
+  m_SmoothPositionAmount: 1.34
+  m_TightenPosition: 0.068
   m_TrackRotation: 1
-  m_SmoothRotation: 0
-  m_SmoothRotationAmount: 5
-  m_TightenRotation: 0.5
+  m_SmoothRotation: 1
+  m_SmoothRotationAmount: 1.57
+  m_TightenRotation: 0.077
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -681,6 +778,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027950082193762922, guid: c56e76da5ad886447ba9219223854d5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6098395016451769530, guid: c56e76da5ad886447ba9219223854d5f,
         type: 3}

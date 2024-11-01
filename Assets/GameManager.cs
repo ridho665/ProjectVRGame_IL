@@ -80,6 +80,7 @@ public class GameManager : MonoBehaviour
             shopManager.SetPlayerBudget(playerBudget);
             shopManager.SetTaskTime(playerTime);
             shopManager.SetPlayerMoney(playerMoney);
+            shopManager.SetTaskDetails(playerStyle, playerRoom);
         }
         else
         {

@@ -83,7 +83,7 @@ public class ScoreManager : MonoBehaviour
     public void ResetScoreAndMoney()
     {
         score = 0;
-        // money = 0;
+        money = 0;
         SaveScoreAndMoney();
         UpdateScoreBar();
     }

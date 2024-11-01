@@ -33,7 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 761811005673677586}
+  - {fileID: 760419823549228863}
   - {fileID: 4311249236306930485}
   - {fileID: 5371792358000088765}
   m_Father: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToDestroy: {fileID: 146666734885812333}
   vfxObject: {fileID: 3332861565330076737}
-  furnitureObject: {fileID: 1918150286046694809}
+  furnitureObject: {fileID: 5836632869709450198}
   objectCollider: {fileID: 1046534325538320623}
   objectRigidbody: {fileID: 5157501085970241337}
   delayBetweenVFXAndFurniture: 0.5
@@ -299,16 +299,13 @@ GameObject:
   - component: {fileID: 761811005673677586}
   - component: {fileID: 969176209236541702}
   - component: {fileID: 8207780520262875748}
-  - component: {fileID: 2413000353355081550}
-  - component: {fileID: 3115695928607271674}
-  - component: {fileID: 6485800038068035546}
   m_Layer: 3
   m_Name: modern bonsai
-  m_TagString: BonsaiModern
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &761811005673677586
 Transform:
   m_ObjectHideFlags: 0
@@ -317,12 +314,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918150286046694809}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 2.771, y: -0.339, z: 2.639}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0.50000006, y: 0.49999997, z: 0.50000006, w: 0.49999997}
+  m_LocalPosition: {x: 9.691999, y: -2.512, z: -11.764002}
+  m_LocalScale: {x: 399.99994, y: 399.99994, z: 400}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8978706391332064682}
+  m_Father: {fileID: 760419823549228863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &969176209236541702
 MeshFilter:
@@ -377,13 +374,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2413000353355081550
+--- !u!1 &5836632869709450198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760419823549228863}
+  - component: {fileID: 6418871866656256315}
+  - component: {fileID: 6399184902261658682}
+  - component: {fileID: 6735365156879934161}
+  m_Layer: 3
+  m_Name: modern bonsai_1
+  m_TagString: BonsaiModern
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &760419823549228863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5836632869709450198}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.17, y: 0.289, z: 0.216}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 761811005673677586}
+  m_Father: {fileID: 8978706391332064682}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6418871866656256315
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918150286046694809}
+  m_GameObject: {fileID: 5836632869709450198}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -396,15 +428,15 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0052666385, y: 0.004202918, z: 0.006070528}
-  m_Center: {x: -0.027682208, y: 0.02641288, z: 0.00686381}
---- !u!54 &3115695928607271674
+  m_Size: {x: 1.6801515, y: 2.4488459, z: 1.6412657}
+  m_Center: {x: -0.8792979, y: 0.22172815, z: -0.70219696}
+--- !u!54 &6399184902261658682
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918150286046694809}
+  m_GameObject: {fileID: 5836632869709450198}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -422,16 +454,16 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6485800038068035546
+--- !u!114 &6735365156879934161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918150286046694809}
+  m_GameObject: {fileID: 5836632869709450198}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -441,7 +473,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
@@ -547,19 +579,19 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 0
-  m_SmoothPositionAmount: 5
-  m_TightenPosition: 0.5
+  m_SmoothPosition: 1
+  m_SmoothPositionAmount: 1.34
+  m_TightenPosition: 0.068
   m_TrackRotation: 1
-  m_SmoothRotation: 0
-  m_SmoothRotationAmount: 5
-  m_TightenRotation: 0.5
+  m_SmoothRotation: 1
+  m_SmoothRotationAmount: 1.57
+  m_TightenRotation: 0.077
   m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
@@ -597,6 +629,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027950082193762922, guid: c56e76da5ad886447ba9219223854d5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6098395016451769530, guid: c56e76da5ad886447ba9219223854d5f,
         type: 3}

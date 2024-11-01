@@ -3,10 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     public GameManager gameManager;
+    public Button continueButton;
+
+    private void Start()
+    {
+        // Cek apakah data sudah ada di PlayerPrefs
+        bool hasSaveData = PlayerPrefs.HasKey("IsNewGame");
+        Debug.Log("Has Save Data: " + hasSaveData);
+        
+        // Mengaktifkan atau menonaktifkan tombol berdasarkan data yang ditemukan
+        continueButton.interactable = hasSaveData;
+    }
 
     public void NewGame()
     {
@@ -18,9 +30,16 @@ public class MainMenu : MonoBehaviour
 
     public void ContinueGame()
     {
-        // PlayerPrefs.SetInt("IsNewGame", 0);
-        gameManager.ContinueGame();
-        StartCoroutine(EnterGameplayModeWithFade());
+        if (PlayerPrefs.HasKey("IsNewGame"))
+        {
+            Debug.Log("Continuing Game...");
+            gameManager.ContinueGame();
+            StartCoroutine(EnterGameplayModeWithFade());
+        }
+        else
+        {
+            Debug.LogWarning("No saved data found, cannot continue.");
+        }
     }
 
     public void BackMainMenu()
