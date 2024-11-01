@@ -497,8 +497,8 @@ MonoBehaviour:
   player: {fileID: 2084608033}
   tablet: {fileID: 6098524436070037047}
   scoreManager: {fileID: 1861770050}
-  sprintMultiplier: 0.2
-  sprintDuration: 5
+  sprintMultiplier: 1
+  sprintDuration: 1000
   buySprintButton: {fileID: 6098524436070037053}
   buyBudgetBoosterButton: {fileID: 6098524436070037052}
   buyTimeExtensionButton: {fileID: 6098524436070037051}
@@ -3290,7 +3290,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 181949348}
-  - {fileID: 2017178484}
   m_Father: {fileID: 1039828303}
   m_LocalEulerAnglesHint: {x: 18.66, y: 0, z: 0}
 --- !u!114 &455045256
@@ -7424,6 +7423,7 @@ Transform:
   - {fileID: 455045255}
   - {fileID: 691422904}
   - {fileID: 581122218}
+  - {fileID: 2017178484}
   m_Father: {fileID: 2084608041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1049537835
@@ -12405,6 +12405,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2017178484}
+  - component: {fileID: 2017178485}
   m_Layer: 8
   m_Name: Inventory
   m_TagString: Untagged
@@ -12420,14 +12421,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017178483}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.1621205, y: -0, z: -0, w: 0.986771}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 297658434}
-  m_Father: {fileID: 455045255}
+  m_Father: {fileID: 1039828303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2017178485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017178483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9ecdb7249c0f644a0af1c3fbdf05f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HMD: {fileID: 455045254}
+  bodySockets:
+  - gameObject: {fileID: 297658431}
+    hightRatio: 0.55
 --- !u!1 &2032805209
 GameObject:
   m_ObjectHideFlags: 0

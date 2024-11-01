@@ -262,7 +262,7 @@ public class ShopManager : MonoBehaviour
             case "Sprint":
                 if (!isSprintPurchased )
                 {
-                    powerUpCost = 50; // Harga power-up Sprint
+                    powerUpCost = 100; // Harga power-up Sprint
                     if (playerMoney >= powerUpCost)
                     {
                         playerMoney -= powerUpCost;
@@ -398,6 +398,16 @@ public class ShopManager : MonoBehaviour
         sprintCoroutine = StartCoroutine(Sprint());
     }
 
+    // private void AddSprintPowerUp()
+    // {
+    //     currentSprintMultiplier += sprintMultiplier;
+
+    //     if (sprintCoroutine != null)
+    //     {
+    //         Sprint();
+    //     }    
+    // }
+
     private IEnumerator Sprint()
     {
         isSprinting = true;
@@ -412,6 +422,21 @@ public class ShopManager : MonoBehaviour
 
         Debug.Log("Sprint power-up ended.");
     }
+
+    // private void Sprint()
+    // {
+    //     isSprinting = true;
+    //     moveProvider.moveSpeed *= currentSprintMultiplier; // Gandakan kecepatan
+    //     Debug.Log("Sprint multiplier: " + currentSprintMultiplier);
+        
+    //     // yield return new WaitForSeconds(sprintDuration); // Tunggu selama durasi sprint
+        
+    //     // moveProvider.moveSpeed /= currentSprintMultiplier; // Kembalikan kecepatan ke nilai semula
+    //     // currentSprintMultiplier = 1f; // Reset multiplier setelah durasi selesai
+    //     // isSprinting = false;
+
+    //     // Debug.Log("Sprint power-up ended.");
+    // }
 
     public void ResetPowerUpStatus()
     {

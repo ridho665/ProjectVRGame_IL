@@ -155,6 +155,7 @@ public class ScoreManager : MonoBehaviour
 
     private void GameWon()
     {
+        SceneManager.LoadScene("WinScene");
         Debug.Log("Game Won! You've earned 3 stars 5 times.");
         // Tambahkan logika untuk menyelesaikan permainan atau memindahkan ke scene kemenangan
         // Contoh: SceneManager.LoadScene("WinScene");

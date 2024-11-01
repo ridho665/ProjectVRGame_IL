@@ -13456,8 +13456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Increases movement speed by 20% for 5 seconds, the cooldown of this skill
-    is 20 seconds
+  m_text: Increases movement speed by 100%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c5aed41d00559f4889cf9554700f38c, type: 2}
   m_sharedMaterial: {fileID: 1761903542772292808, guid: 1c5aed41d00559f4889cf9554700f38c,
@@ -24095,7 +24094,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $ 50
+  m_text: $ 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c5aed41d00559f4889cf9554700f38c, type: 2}
   m_sharedMaterial: {fileID: 1761903542772292808, guid: 1c5aed41d00559f4889cf9554700f38c,

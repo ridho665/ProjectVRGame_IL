@@ -28,7 +28,7 @@ public class AreaScoreObject : MonoBehaviour
                 break;
 
             case "MejaKlasik":
-                scoreManager.AddScore(50); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "MejaRiasModern":
@@ -36,7 +36,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "MejaRiasKlasik":
-                scoreManager.AddScore(25); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "RakBukuModern":
@@ -48,7 +48,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "SofaModern":
-                scoreManager.AddScore(20); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "SofaKlasik":
@@ -56,7 +56,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "TempatTidurModern":
-                scoreManager.AddScore(30); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "TempatTidurKlasik":
@@ -92,7 +92,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "JamDindingKlasik":
-                scoreManager.AddScore(30); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "KarpetModern":
@@ -100,7 +100,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "KarpetKlasik":
-                scoreManager.AddScore(20); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "LampuHiasModern":
@@ -112,7 +112,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "PatungHiasModern":
-                scoreManager.AddScore(25); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "PatungHiasKlasik":
@@ -144,7 +144,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "KomputerModern":
-                scoreManager.AddScore(25); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(15); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "KomputerKlasik":
@@ -180,7 +180,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "RakTvKlasik":
-                scoreManager.AddScore(25); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(15); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "TvModern":
@@ -227,7 +227,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "MejaRiasKlasik":
-                scoreManager.AddScore(-25); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(-10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "RakBukuModern":
@@ -239,7 +239,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "SofaModern":
-                scoreManager.AddScore(-20); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(-10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "SofaKlasik":
@@ -247,7 +247,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "TempatTidurModern":
-                scoreManager.AddScore(-30); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(-10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "TempatTidurKlasik":
@@ -283,7 +283,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "JamDindingKlasik":
-                scoreManager.AddScore(-30); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(-10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "KarpetModern":
@@ -291,7 +291,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "KarpetKlasik":
-                scoreManager.AddScore(-20); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(-10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "LampuHiasModern":
@@ -303,7 +303,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "PatungHiasModern":
-                scoreManager.AddScore(-25); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(-10); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "PatungHiasKlasik":
@@ -335,7 +335,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "KomputerModern":
-                scoreManager.AddScore(-25); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(-15); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "KomputerKlasik":
@@ -371,7 +371,7 @@ public class AreaScoreObject : MonoBehaviour
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "RakTvKlasik":
-                scoreManager.AddScore(-25); // Menambah skor 2 untuk TableModern
+                scoreManager.AddScore(-15); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
             case "TvModern":
@@ -382,7 +382,6 @@ public class AreaScoreObject : MonoBehaviour
                 scoreManager.AddScore(-5); // Menambah skor 2 untuk TableModern
                 Debug.Log("TableModern touched the score area. Score added: 2");
                 break;
-
 
             default:
                 Debug.Log("An object with an unrecognized tag left the score area.");

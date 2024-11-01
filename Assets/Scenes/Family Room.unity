@@ -9270,6 +9270,7 @@ Transform:
   - {fileID: 1242200345}
   - {fileID: 1710253631}
   - {fileID: 1880366628}
+  - {fileID: 1371076083}
   m_Father: {fileID: 1377480105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085835714
@@ -13524,7 +13525,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1665054906}
-  - {fileID: 1371076083}
   m_Father: {fileID: 1085621259}
   m_LocalEulerAnglesHint: {x: 18.66, y: 0, z: 0}
 --- !u!1 &1258456208
@@ -14023,6 +14023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1371076083}
+  - component: {fileID: 1371076084}
   m_Layer: 8
   m_Name: Inventory
   m_TagString: Untagged
@@ -14038,14 +14039,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371076082}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.1621205, y: -0, z: -0, w: 0.986771}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1991420182}
-  m_Father: {fileID: 1242200345}
+  m_Father: {fileID: 1085621259}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1371076084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371076082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9ecdb7249c0f644a0af1c3fbdf05f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HMD: {fileID: 1242200340}
+  bodySockets:
+  - gameObject: {fileID: 1991420181}
+    hightRatio: 0.55
 --- !u!1 &1377480104
 GameObject:
   m_ObjectHideFlags: 0
@@ -15258,8 +15275,8 @@ MonoBehaviour:
   player: {fileID: 1377480104}
   tablet: {fileID: 1158744372}
   scoreManager: {fileID: 729101404}
-  sprintMultiplier: 0.2
-  sprintDuration: 5
+  sprintMultiplier: 1
+  sprintDuration: 1000
   buySprintButton: {fileID: 1205941626}
   buyBudgetBoosterButton: {fileID: 1205941628}
   buyTimeExtensionButton: {fileID: 1205941630}

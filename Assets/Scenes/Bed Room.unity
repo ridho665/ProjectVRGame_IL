@@ -7302,6 +7302,7 @@ Transform:
   - {fileID: 1510460028}
   - {fileID: 451833114}
   - {fileID: 901077541}
+  - {fileID: 1346726324}
   m_Father: {fileID: 1465837524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746736803
@@ -11353,8 +11354,8 @@ MonoBehaviour:
   player: {fileID: 1465837516}
   tablet: {fileID: 74908746}
   scoreManager: {fileID: 442037515}
-  sprintMultiplier: 0.2
-  sprintDuration: 5
+  sprintMultiplier: 1
+  sprintDuration: 10000
   buySprintButton: {fileID: 1044439789}
   buyBudgetBoosterButton: {fileID: 1044439788}
   buyTimeExtensionButton: {fileID: 1044439787}
@@ -12589,6 +12590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1346726324}
+  - component: {fileID: 1346726325}
   m_Layer: 8
   m_Name: Inventory
   m_TagString: Untagged
@@ -12604,14 +12606,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346726323}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.1621205, y: -0, z: -0, w: 0.986771}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 281746866}
-  m_Father: {fileID: 1510460028}
+  m_Father: {fileID: 736767258}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1346726325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346726323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9ecdb7249c0f644a0af1c3fbdf05f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HMD: {fileID: 1510460027}
+  bodySockets:
+  - gameObject: {fileID: 281746865}
+    hightRatio: 0.55
 --- !u!1 &1359847500
 GameObject:
   m_ObjectHideFlags: 0
@@ -13751,7 +13769,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1899830058}
-  - {fileID: 1346726324}
   m_Father: {fileID: 736767258}
   m_LocalEulerAnglesHint: {x: 18.66, y: 0, z: 0}
 --- !u!114 &1510460029
