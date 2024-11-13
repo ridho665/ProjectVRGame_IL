@@ -99,6 +99,18 @@ public class AudioManager : MonoBehaviour
             case 3:
                 PlayBGM(3);
                 break;
+            case 4:
+                PlayBGM(4);
+                break;
+            case 5:
+                PlayBGM(5);
+                break;
+            case 6:
+                PlayBGM(6);
+                break;
+            case 7:
+                PlayBGM(7);
+                break;           
             default:
                 PlayBGM(0); // Default BGM
                 break;
