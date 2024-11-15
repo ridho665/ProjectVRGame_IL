@@ -16,11 +16,13 @@ public class GameManager : MonoBehaviour
     [Header("Spawn Points")]
     public GameObject spawn1;
     public GameObject spawn2;
-    public GameObject tutorialUI;
+    // public GameObject tutorialUI;
 
     [Header("References")]
     public ShopManager shopManager;
     public ScoreManager scoreManager; // Referensi ke ScoreManager
+    public GameObject suratObject;
+    private Animator suratAnimator;
 
     // Data untuk menyimpan budget, style, room, time
     [Header("Data")]
@@ -64,8 +66,14 @@ public class GameManager : MonoBehaviour
 
         spawn1 = GameObject.Find("SpawnNewGame"); // Pastikan Player1 memiliki tag "Player1"
         spawn2 = GameObject.Find("SpawnContinue");
-        tutorialUI = GameObject.Find("UI_Tutorial");
+        // tutorialUI = GameObject.Find("UI_Tutorial");
         player = GameObject.Find("Player");
+
+        suratObject = GameObject.Find("Surat");
+        if (suratObject != null)
+        {
+            suratAnimator = suratObject.GetComponent<Animator>();
+        }
 
 
         if (scene.name == "Gameplay") // Hanya jalankan logika ini di scene "Gameplay"
@@ -203,10 +211,15 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Player moved to spawn1 (New Game).");
             }
 
-            if (tutorialUI != null)
+            // if (tutorialUI != null)
+            // {
+            //     tutorialUI.SetActive(true); // Aktifkan tutorial saat New Game
+            //     Debug.Log("Tutorial UI activated for New Game.");
+            // }
+
+            if (suratAnimator != null)
             {
-                tutorialUI.SetActive(true); // Aktifkan tutorial saat New Game
-                Debug.Log("Tutorial UI activated for New Game.");
+                suratAnimator.enabled = true; // Aktifkan Animator saat New Game
             }
         }
         else
@@ -218,10 +231,15 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Player moved to spawn2 (Continue Game).");
             }
 
-            if (tutorialUI != null)
+            // if (tutorialUI != null)
+            // {
+            //     tutorialUI.SetActive(false); // Nonaktifkan tutorial saat Continue Game
+            //     Debug.Log("Tutorial UI deactivated for Continue Game.");
+            // }
+
+            if (suratAnimator != null)
             {
-                tutorialUI.SetActive(false); // Nonaktifkan tutorial saat Continue Game
-                Debug.Log("Tutorial UI deactivated for Continue Game.");
+                suratAnimator.enabled = false; // Aktifkan Animator saat New Game
             }
         }
     }

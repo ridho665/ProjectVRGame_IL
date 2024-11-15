@@ -88,13 +88,13 @@ public class AudioManager : MonoBehaviour
         switch (sceneIndex)
         {
             case 0: // Main Menu
-                PlayBGM(0); // BGM for Main Menu
+                PlayBGM(0); 
                 break;
-            case 1: // Level 1
-                PlayBGM(1); // BGM for Level 1
+            case 1: 
+                PlayBGM(1); 
                 break;
-            case 2: // Level 2
-                PlayBGM(2); // BGM for Level 2
+            case 2: 
+                PlayBGM(2); 
                 break;
             case 3:
                 PlayBGM(3);
@@ -110,9 +110,12 @@ public class AudioManager : MonoBehaviour
                 break;
             case 7:
                 PlayBGM(7);
+                break; 
+            case 8:
+                PlayBGM(8);
                 break;           
             default:
-                PlayBGM(0); // Default BGM
+                PlayBGM(0);
                 break;
         }
     }
