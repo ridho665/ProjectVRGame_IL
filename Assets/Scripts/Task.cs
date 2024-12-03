@@ -19,7 +19,7 @@ public class Task
     // Daftar budget yang tersedia
     // private float[] availableBudgets = { 1800, 1850, 1900, 1950, 2000, 2050, 2100, 2150, 2200, 2250, 2300, 2350, 2400, 2450, 2500 };
 
-    private float[] availableTimes = { 480 };
+    private float[] availableTimes = { 600 };
 
     // Constructor untuk membuat task baru dengan budget, style, dan ruangan acak
     public void Initialize()

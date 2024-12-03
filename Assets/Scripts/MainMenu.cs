@@ -20,6 +20,19 @@ public class MainMenu : MonoBehaviour
         continueButton.interactable = hasSaveData;
     }
 
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+        StartCoroutine(EnterGameplayModeWithFade());
+    }
+
+    public void Gameplay()
+    {
+        PlayerPrefs.SetInt("IsNewGame", 1);
+        SceneManager.LoadScene("Gameplay");
+        StartCoroutine(EnterLeaveGameplayModeWithFade());
+    }
+
     public void NewGame()
     {
         PlayerPrefs.DeleteAll();

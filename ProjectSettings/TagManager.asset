@@ -51,6 +51,15 @@ TagManager:
   - VasBungaModern
   - ChairClassic
   - TableModern
+  - Wall1
+  - Wall2
+  - MejaDapur
+  - KursiBar
+  - LemariBesarKlasik
+  - LemariBesarModern
+  - LemariKlasik
+  - LemariModern
+  - Wastafel
   layers:
   - Default
   - TransparentFX

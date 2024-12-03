@@ -7,6 +7,7 @@ public class FreezeOnFloorTouch : MonoBehaviour
     private Rigidbody rb;
     private XRGrabInteractable grabInteractable;
     private Coroutine freezeCoroutine;
+    private bool isBeingGrabbed = false; // Status apakah objek sedang di-grab
 
     private void Awake()
     {
@@ -27,8 +28,8 @@ public class FreezeOnFloorTouch : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Periksa apakah objek menyentuh lantai dengan tag "Floor"
-        if (collision.gameObject.CompareTag("Floor"))
+        // Periksa apakah objek menyentuh lantai dengan tag "Floor" dan tidak sedang di-grab
+        if (collision.gameObject.CompareTag("Floor") && !isBeingGrabbed)
         {
             if (freezeCoroutine == null)
             {
@@ -76,7 +77,9 @@ public class FreezeOnFloorTouch : MonoBehaviour
 
     private void OnGrab(SelectEnterEventArgs args)
     {
-        // Hapus freeze posisi dan rotasi saat objek di-grab
+        // Tandai bahwa objek sedang di-grab dan hapus freeze posisi/rotasi
+        isBeingGrabbed = true;
+
         if (freezeCoroutine != null)
         {
             StopCoroutine(freezeCoroutine);
@@ -89,6 +92,9 @@ public class FreezeOnFloorTouch : MonoBehaviour
 
     private void OnRelease(SelectExitEventArgs args)
     {
+        // Tandai bahwa objek tidak lagi di-grab
+        isBeingGrabbed = false;
+
         // Jika dilepas, cek apakah masih menyentuh lantai dan mulai Coroutine untuk freeze
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, 0.1f);
         foreach (var hitCollider in hitColliders)
@@ -108,8 +114,12 @@ public class FreezeOnFloorTouch : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        rb.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
-        Debug.Log("Object is frozen after delay.");
+        if (!isBeingGrabbed) // Pastikan tidak sedang di-grab sebelum freeze
+        {
+            rb.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+            Debug.Log("Object is frozen after delay.");
+        }
+
         freezeCoroutine = null; // Reset coroutine
     }
 }
